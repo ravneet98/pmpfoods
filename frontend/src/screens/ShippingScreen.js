@@ -31,6 +31,7 @@ const ShippingScreen = ({ history }) => {
             value={address}
             required
             onChange={(e) => setAddress(e.target.value)}
+            style={{ color: "#fff" }}
           ></Form.Control>
         </Form.Group>
         <Form.Group controlId='city' className='mt-2'>
@@ -41,6 +42,7 @@ const ShippingScreen = ({ history }) => {
             value={city}
             required
             onChange={(e) => setCity(e.target.value)}
+            style={{ color: "#fff" }}
           ></Form.Control>
           <Form.Group controlId='postalCode' className='mt-2'>
             <Form.Label>Postal Code</Form.Label>
@@ -50,6 +52,7 @@ const ShippingScreen = ({ history }) => {
               value={postalCode}
               required
               onChange={(e) => setPostalCode(e.target.value)}
+              style={{ color: "#fff" }}
             ></Form.Control>
           </Form.Group>
           <Form.Group controlId='country' className='mt-2'>
@@ -60,6 +63,7 @@ const ShippingScreen = ({ history }) => {
               value={country}
               required
               onChange={(e) => setCountry(e.target.value)}
+              style={{ color: "#fff" }}
             ></Form.Control>
           </Form.Group>
         </Form.Group>

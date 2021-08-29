@@ -113,6 +113,7 @@ const ProductEditScreen = ({ match, history }) => {
                 placeholder='Enter name'
                 value={name}
                 onChange={(e) => setName(e.target.value)}
+                style={{ color: "#fff" }}
               ></Form.Control>
             </Form.Group>
 
@@ -123,6 +124,7 @@ const ProductEditScreen = ({ match, history }) => {
                 placeholder='Enter price'
                 value={price}
                 onChange={(e) => setPrice(e.target.value)}
+                style={{ color: "#fff" }}
               ></Form.Control>
             </Form.Group>
 
@@ -132,6 +134,7 @@ const ProductEditScreen = ({ match, history }) => {
                 type='text'
                 placeholder='Enter image url'
                 value={image}
+                style={{ color: "#fff" }}
                 onChange={(e) => setImage(e.target.value)}
               ></Form.Control>
               <Form.File
@@ -139,6 +142,7 @@ const ProductEditScreen = ({ match, history }) => {
                 custom
                 onChange={uploadFileHandler}
                 class='form-control mt-2'
+                style={{ color: "#fff" }}
               ></Form.File>
               {uploading && <Loader />}
             </Form.Group>
@@ -150,6 +154,7 @@ const ProductEditScreen = ({ match, history }) => {
                 placeholder='Enter brand'
                 value={brand}
                 onChange={(e) => setBrand(e.target.value)}
+                style={{ color: "#fff" }}
               ></Form.Control>
             </Form.Group>
 
@@ -160,6 +165,7 @@ const ProductEditScreen = ({ match, history }) => {
                 placeholder='Enter countInStock'
                 value={countInStock}
                 onChange={(e) => setCountInStock(e.target.value)}
+                style={{ color: "#fff" }}
               ></Form.Control>
             </Form.Group>
 
@@ -170,6 +176,7 @@ const ProductEditScreen = ({ match, history }) => {
                 placeholder='Enter category'
                 value={category}
                 onChange={(e) => setCategory(e.target.value)}
+                style={{ color: "#fff" }}
               ></Form.Control>
             </Form.Group>
 
@@ -180,6 +187,7 @@ const ProductEditScreen = ({ match, history }) => {
                 placeholder='Enter description'
                 value={description}
                 onChange={(e) => setDescription(e.target.value)}
+                style={{ color: "#fff" }}
               ></Form.Control>
             </Form.Group>
 

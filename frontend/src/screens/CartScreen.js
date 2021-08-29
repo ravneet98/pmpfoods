@@ -61,6 +61,7 @@ const CartScreen = ({ match, location, history }) => {
                     <Form.Control
                       as='select'
                       value={item.qty}
+                      style={{ color: "#fff" }}
                       onChange={(e) =>
                         dispatch(
                           addToCart(item.product, Number(e.target.value))

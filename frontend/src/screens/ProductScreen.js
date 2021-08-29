@@ -127,7 +127,8 @@ const ProductScreen = ({ history, match }) => {
                           <Form.Control
                             as='select'
                             value={qty}
-                            onChange={(e) => setQty(e.target.value)}
+                                onChange={(e) => setQty(e.target.value)}
+                                style={{color:"#fff"}}
                           >
                             {[...Array(product.countInStock).keys()].map(
                               (x) => (

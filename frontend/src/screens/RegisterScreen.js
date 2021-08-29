@@ -50,6 +50,7 @@ const RegisterScreen = ({ location, history }) => {
             placeholder='Enter name'
             value={name}
             onChange={(e) => setName(e.target.value)}
+            style={{ color: "#fff" }}
           ></Form.Control>
         </Form.Group>
 
@@ -60,6 +61,7 @@ const RegisterScreen = ({ location, history }) => {
             placeholder='Enter email'
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            style={{ color: "#fff" }}
           ></Form.Control>
         </Form.Group>
 
@@ -70,6 +72,7 @@ const RegisterScreen = ({ location, history }) => {
             placeholder='Enter password'
             value={password}
             onChange={(e) => setPassword(e.target.value)}
+            style={{ color: "#fff" }}
           ></Form.Control>
         </Form.Group>
 
@@ -80,6 +83,7 @@ const RegisterScreen = ({ location, history }) => {
             placeholder='Confirm password'
             value={confirmPassword}
             onChange={(e) => setConfirmPassword(e.target.value)}
+            style={{ color: "#fff" }}
           ></Form.Control>
         </Form.Group>
 
