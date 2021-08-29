@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Spinner } from "react-bootstrap";
 import { css } from "@emotion/react";
 import HashLoader from "react-spinners/HashLoader";
+import Backdrop from "./Backdrop";
 
 const override = css`
   display: block;
@@ -16,8 +17,14 @@ const override = css`
 `;
 
 const Loader = () => {
-  let [color, setColor] = useState("#455A64");
-  return <HashLoader css={override} color={color} size={50} />;
+  let [color, setColor] = useState("#303030");
+
+  return (
+    <>
+      <Backdrop></Backdrop>
+      <HashLoader css={override} color={color} size={50} />;
+    </>
+  );
 };
 
 export default Loader;

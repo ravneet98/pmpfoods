@@ -45,7 +45,7 @@ const LoginScreen = ({ location, history }) => {
           ></Form.Control>
         </Form.Group>
 
-        <Form.Group controlId='password'>
+        <Form.Group controlId='password' className='mt-2'>
           <Form.Label>Password</Form.Label>
           <Form.Control
             type='password'
@@ -55,7 +55,7 @@ const LoginScreen = ({ location, history }) => {
           ></Form.Control>
         </Form.Group>
 
-        <Button type='submit' variant='primary'>
+        <Button type='submit' variant='success' className='mt-2'>
           Sign In
         </Button>
       </Form>

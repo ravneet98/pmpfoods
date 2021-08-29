@@ -67,7 +67,7 @@ const ProductScreen = ({ history, match }) => {
 
   return (
     <>
-      <Link className='btn btn-light my-3' to='/'>
+      <Link className='btn btn-dark my-3' to='/'>
         Go Back
       </Link>
       {loading ? (
@@ -145,7 +145,7 @@ const ProductScreen = ({ history, match }) => {
                   <ListGroup.Item>
                     <Button
                       onClick={addToCartHandler}
-                      className='btn-block'
+                      className='btn btn-secondary'
                       type='button'
                       disabled={product.countInStock === 0}
                     >
@@ -209,7 +209,7 @@ const ProductScreen = ({ history, match }) => {
                       <Button
                         disabled={loadingProductReview}
                         type='submit'
-                        variant='primary'
+                        className='btn btn-secondary mt-2'
                       >
                         Submit
                       </Button>

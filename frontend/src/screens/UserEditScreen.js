@@ -49,7 +49,7 @@ const UserEditScreen = ({ match, history }) => {
 
   return (
     <>
-      <Link to='/admin/userlist' className='btn btn-light my-3'>
+      <Link to='/admin/userlist' className='btn btn-dark my-3'>
         Go Back
       </Link>
       <FormContainer>
@@ -61,7 +61,7 @@ const UserEditScreen = ({ match, history }) => {
         ) : error ? (
           <Message variant='danger'>{error}</Message>
         ) : (
-          <Form onSubmit={submitHandler}>
+          <Form onSubmit={submitHandler} className='mt-2'>
             <Form.Group controlId='name'>
               <Form.Label>Name</Form.Label>
               <Form.Control
@@ -72,7 +72,7 @@ const UserEditScreen = ({ match, history }) => {
               ></Form.Control>
             </Form.Group>
 
-            <Form.Group controlId='email'>
+            <Form.Group controlId='email' className='mt-2'>
               <Form.Label>Email Address</Form.Label>
               <Form.Control
                 type='email'
@@ -82,7 +82,7 @@ const UserEditScreen = ({ match, history }) => {
               ></Form.Control>
             </Form.Group>
 
-            <Form.Group controlId='isadmin'>
+            <Form.Group controlId='isadmin' className='mt-2'>
               <Form.Check
                 type='checkbox'
                 label='Is Admin'
@@ -91,7 +91,7 @@ const UserEditScreen = ({ match, history }) => {
               ></Form.Check>
             </Form.Group>
 
-            <Button type='submit' variant='primary'>
+            <Button type='submit' variant='success' className='mt-2'>
               Update
             </Button>
           </Form>
