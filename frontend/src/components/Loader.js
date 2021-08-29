@@ -22,7 +22,7 @@ const Loader = () => {
   return (
     <>
       <Backdrop></Backdrop>
-      <HashLoader css={override} color={color} size={50} />;
+      <HashLoader css={override} color={color} size={50} />
     </>
   );
 };

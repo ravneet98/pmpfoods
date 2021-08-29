@@ -21,7 +21,16 @@ const Header = () => {
       <Navbar bg='dark' variant='dark' expand='lg' collapseOnSelect>
         <Container>
           <LinkContainer to='/'>
-            <Navbar.Brand>PMP Foods LTD</Navbar.Brand>
+            <Navbar.Brand>
+              <img
+                src='/logo.png'
+               
+                height='60'
+                className='d-inline-block align-top'
+                alt='PMP Foods LTD'
+              />
+             
+            </Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse id='basic-navbar-nav'>

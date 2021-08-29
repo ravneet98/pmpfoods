@@ -67,15 +67,15 @@ const ProductScreen = ({ history, match }) => {
 
   return (
     <>
-      <Link className='btn btn-dark my-3' to='/'>
-        Go Back
-      </Link>
       {loading ? (
         <Loader />
       ) : error ? (
         <Message variant='danger'>{error}</Message>
       ) : (
         <>
+          <Link className='btn btn-dark my-3' to='/'>
+            Go Back
+          </Link>
           <Meta title={product.name} />
           <Row>
             <Col md={6}>

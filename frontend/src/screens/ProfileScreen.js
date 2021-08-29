@@ -76,7 +76,7 @@ const ProfileScreen = ({ location, history }) => {
               ></Form.Control>
             </Form.Group>
 
-            <Form.Group controlId='email'>
+            <Form.Group controlId='email' className='mt-2'>
               <Form.Label>Email Address</Form.Label>
               <Form.Control
                 type='email'
@@ -86,7 +86,7 @@ const ProfileScreen = ({ location, history }) => {
               ></Form.Control>
             </Form.Group>
 
-            <Form.Group controlId='password'>
+            <Form.Group controlId='password' className='mt-2'>
               <Form.Label>Password</Form.Label>
               <Form.Control
                 type='password'
@@ -96,7 +96,7 @@ const ProfileScreen = ({ location, history }) => {
               ></Form.Control>
             </Form.Group>
 
-            <Form.Group controlId='confirmPassword'>
+            <Form.Group controlId='confirmPassword' className='mt-2'>
               <Form.Label>Confirm Password</Form.Label>
               <Form.Control
                 type='password'
