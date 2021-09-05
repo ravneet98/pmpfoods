@@ -13,6 +13,15 @@ import {
 import { PRODUCT_CREATE_RESET } from "../constants/productConstants";
 
 const ProductListScreen = ({ history, match }) => {
+   const addDecimals = (num) => {
+     return (Math.round(num * 100) / 100).toFixed(2);
+   };
+  const discountedPrice = (price,discount) => {
+    return addDecimals(
+       price * ((100 - discount) / 100)
+    )
+  }
+  
   const pageNumber = match.params.pageNumber || 1;
 
   const dispatch = useDispatch();
@@ -98,6 +107,7 @@ const ProductListScreen = ({ history, match }) => {
                 <th>ID</th>
                 <th>NAME</th>
                 <th>PRICE</th>
+                <th>DISCOUNT</th>
                 <th>CATEGORY</th>
                 <th>BRAND</th>
                 <th></th>
@@ -108,7 +118,23 @@ const ProductListScreen = ({ history, match }) => {
                 <tr key={product._id}>
                   <td>{product._id}</td>
                   <td>{product.name}</td>
-                  <td>${product.price}</td>
+                  {product.discount > 0 ? (
+                    <td>
+                      ${discountedPrice(product.price, product.discount)}{" "}
+                      <p
+                        style={{
+                          fontSize: "0.8rem",
+                          textDecorationLine: "line-through",
+                          color: "#9E9E9E",
+                        }}
+                      >
+                        ${product.price}
+                      </p>
+                    </td>
+                  ) : (
+                    <td>${product.price}</td>
+                  )}
+                  <td>{product.discount}%</td>
                   <td>{product.category}</td>
                   <td>{product.brand}</td>
                   <td>

@@ -14,6 +14,7 @@ const ProductEditScreen = ({ match, history }) => {
 
   const [name, setName] = useState("");
   const [price, setPrice] = useState(0);
+  const [discount, setDiscount] = useState(0);
   const [image, setImage] = useState("");
   const [brand, setBrand] = useState("");
   const [category, setCategory] = useState("");
@@ -43,6 +44,7 @@ const ProductEditScreen = ({ match, history }) => {
       } else {
         setName(product.name);
         setPrice(product.price);
+        setDiscount(product.discount);
         setImage(product.image);
         setBrand(product.brand);
         setCategory(product.category);
@@ -82,6 +84,7 @@ const ProductEditScreen = ({ match, history }) => {
         _id: productId,
         name,
         price,
+        discount,
         image,
         brand,
         category,
@@ -124,6 +127,16 @@ const ProductEditScreen = ({ match, history }) => {
                 placeholder='Enter price'
                 value={price}
                 onChange={(e) => setPrice(e.target.value)}
+                style={{ color: "#fff" }}
+              ></Form.Control>
+            </Form.Group>
+            <Form.Group controlId='discount' className='mt-2'>
+              <Form.Label>Discount</Form.Label>
+              <Form.Control
+                type='number'
+                placeholder='Enter discount %'
+                value={discount}
+                onChange={(e) => setDiscount(e.target.value)}
                 style={{ color: "#fff" }}
               ></Form.Control>
             </Form.Group>

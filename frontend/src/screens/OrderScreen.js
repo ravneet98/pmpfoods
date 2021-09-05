@@ -34,12 +34,18 @@ const OrderScreen = ({ match, history }) => {
 
   const userLogin = useSelector((state) => state.userLogin);
   const { userInfo } = userLogin;
-
+const addDecimal = (num) => {
+  return (Math.round(num * 100) / 100).toFixed(2);
+};
+   const discountedPrice = (price, discount) => {
+     return addDecimal(price * ((100 - discount) / 100));
+   };
   if (!loading) {
     //   Calculate prices
     const addDecimals = (num) => {
       return (Math.round(num * 100) / 100).toFixed(2);
     };
+    
 
     order.itemsPrice = addDecimals(
       order.orderItems.reduce((acc, item) => acc + item.price * item.qty, 0)
@@ -155,7 +161,10 @@ const OrderScreen = ({ match, history }) => {
                           </Link>
                         </Col>
                         <Col md={4}>
-                          {item.qty} x ${item.price} = ${item.qty * item.price}
+                          {item.qty} x $
+                          {discountedPrice(item.price, item.discount)} = $
+                          {item.qty *
+                            discountedPrice(item.price, item.discount)}
                         </Col>
                       </Row>
                     </ListGroup.Item>

@@ -14,6 +14,12 @@ import Message from "../components/Message";
 import { addToCart, removeFromCart } from "../actions/cartAction";
 
 const CartScreen = ({ match, location, history }) => {
+  const addDecimals = (num) => {
+    return (Math.round(num * 100) / 100).toFixed(2);
+  };
+  const discountedPrice = (price, discount) => {
+    return addDecimals(price * ((100 - discount) / 100));
+  };
   const productId = match.params.id;
 
   const qty = location.search ? Number(location.search.split("=")[1]) : 1;
@@ -56,7 +62,23 @@ const CartScreen = ({ match, location, history }) => {
                   <Col md={3}>
                     <Link to={`/product/${item.product}`}>{item.name}</Link>
                   </Col>
-                  <Col md={2}>${item.price}</Col>
+                  {item.discount > 0 ? (
+                    <Col md={2}>
+                      ${discountedPrice(item.price, item.discount)}{" "}
+                      <p
+                        style={{
+                          fontSize: "0.8rem",
+                          textDecorationLine: "line-through",
+                          color: "#9E9E9E",
+                        }}
+                      >
+                        ${addDecimals(item.price)}
+                      </p>
+                    </Col>
+                  ) : (
+                    <Col md={2}>${item.price}</Col>
+                  )}
+
                   <Col md={2}>
                     <Form.Control
                       as='select'
@@ -98,10 +120,32 @@ const CartScreen = ({ match, location, history }) => {
                 Subtotal ({cartItems.reduce((acc, item) => acc + item.qty, 0)})
                 items
               </h2>
-              $
+              <h2>$
               {cartItems
-                .reduce((acc, item) => acc + item.qty * item.price, 0)
-                .toFixed(2)}
+                .reduce(
+                  (acc, item) =>
+                    acc + item.qty * discountedPrice(item.price, item.discount),
+                  0
+                )
+                  .toFixed(2)}
+                </h2>
+              <p
+                style={{
+                  color: "#E53935",
+                  fontStyle: "italic",
+                  fontSize: "0.8rem",
+                }}
+              >
+                Save $
+                {cartItems
+                  .reduce(
+                    (acc, item) =>
+                      acc +
+                      (item.qty * item.price)-(item.qty * discountedPrice(item.price, item.discount)),
+                    0
+                  )
+                  .toFixed(2)}
+              </p>
             </ListGroup.Item>
             <ListGroup.Item>
               <Button

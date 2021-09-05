@@ -5,7 +5,7 @@ const orderSchema = mongoose.Schema(
     user: {
       type: mongoose.Schema.Types.ObjectId,
       required: true,
-      ref: 'User',
+      ref: "User",
     },
     orderItems: [
       {
@@ -13,10 +13,11 @@ const orderSchema = mongoose.Schema(
         qty: { type: Number, required: true },
         image: { type: String, required: true },
         price: { type: Number, required: true },
+        discount: { type: Number, default: 0.0 },
         product: {
           type: mongoose.Schema.Types.ObjectId,
           required: true,
-          ref: 'Product',
+          ref: "Product",
         },
       },
     ],
@@ -46,6 +47,10 @@ const orderSchema = mongoose.Schema(
       required: true,
       default: 0.0,
     },
+    discount: {
+      type: Number,
+      default: 0.0,
+    },
     totalPrice: {
       type: Number,
       required: true,
@@ -71,7 +76,7 @@ const orderSchema = mongoose.Schema(
   {
     timestamps: true,
   }
-)
+);
 
 const Order = mongoose.model('Order', orderSchema)
 

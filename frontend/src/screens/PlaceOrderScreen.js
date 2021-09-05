@@ -22,16 +22,31 @@ const PlaceOrderScreen = ({ history }) => {
   const addDecimals = (num) => {
     return (Math.round(num * 100) / 100).toFixed(2);
   };
-
+const discountedPrice = (price, discount) => {
+  return addDecimals(price * ((100 - discount) / 100));
+};
   cart.itemsPrice = addDecimals(
-    cart.cartItems.reduce((acc, item) => acc + item.price * item.qty, 0)
+    cart.cartItems.reduce(
+      (acc, item) =>
+        acc + item.price * item.qty,
+      0
+    )
+  );
+  cart.itemsDiscount = cart.itemsPrice-addDecimals(
+    cart.cartItems.reduce(
+      (acc, item) =>
+        acc + discountedPrice(item.price, item.discount) * item.qty,
+      0
+    )
   );
   cart.shippingPrice = addDecimals(cart.itemsPrice > 100 ? 0 : 100);
-  cart.taxPrice = addDecimals(Number((0.15 * cart.itemsPrice).toFixed(2)));
+  cart.taxPrice = addDecimals(Number((0.15 * (cart.itemsPrice-cart.itemsDiscount)).toFixed(2)));
+  
   cart.totalPrice = (
-    Number(cart.itemsPrice) +
+    (Number(cart.itemsPrice) +
     Number(cart.shippingPrice) +
-    Number(cart.taxPrice)
+    Number(cart.taxPrice) )-
+    Number(cart.itemsDiscount)
   ).toFixed(2);
 
   const orderCreate = useSelector((state) => state.orderCreate);
@@ -52,7 +67,8 @@ const PlaceOrderScreen = ({ history }) => {
         orderItems: cart.cartItems,
         shippingAddress: cart.shippingAddress,
         paymentMethod: cart.paymentMethod,
-        itemsPrice: cart.itemsPrice,
+        itemsPrice: cart.itemsPrice - cart.itemsDiscount,
+        discount:cart.itemsDiscount,
         shippingPrice: cart.shippingPrice,
         taxPrice: cart.taxPrice,
         totalPrice: cart.totalPrice,
@@ -105,7 +121,10 @@ const PlaceOrderScreen = ({ history }) => {
                           </Link>
                         </Col>
                         <Col md={4}>
-                          {item.qty} x ${item.price} = ${item.qty * item.price}
+                          {item.qty} x $
+                          {discountedPrice(item.price, item.discount)} = $
+                          {item.qty *
+                            discountedPrice(item.price, item.discount)}
                         </Col>
                       </Row>
                     </ListGroup.Item>
@@ -137,6 +156,12 @@ const PlaceOrderScreen = ({ history }) => {
                 <Row>
                   <Col>Tax</Col>
                   <Col>${cart.taxPrice}</Col>
+                </Row>
+              </ListGroup.Item>
+              <ListGroup.Item>
+                <Row>
+                  <Col>Discount</Col>
+                  <Col>-${cart.itemsDiscount}</Col>
                 </Row>
               </ListGroup.Item>
               <ListGroup.Item>

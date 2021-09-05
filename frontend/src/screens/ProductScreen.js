@@ -14,6 +14,7 @@ import Rating from "../components/Rating";
 import Message from "../components/Message";
 import Loader from "../components/Loader";
 import Meta from "../components/Meta";
+import Discount from "../components/Discount";
 import {
   listProductDetails,
   createProductReview,
@@ -29,6 +30,14 @@ const ProductScreen = ({ history, match }) => {
 
   const productDetails = useSelector((state) => state.productDetails);
   const { loading, error, product } = productDetails;
+
+  const addDecimals = (num) => {
+    return (Math.round(num * 100) / 100).toFixed(2);
+  };
+  const discountedPrice = addDecimals(
+    product.price * ((100 - product.discount) / 100)
+  );
+  
 
   const userLogin = useSelector((state) => state.userLogin);
   const { userInfo } = userLogin;
@@ -77,10 +86,17 @@ const ProductScreen = ({ history, match }) => {
             Go Back
           </Link>
           <Meta title={product.name} />
+
           <Row>
             <Col md={6}>
+              {product.discount > 0 ? (
+                <Discount discount={`-${product.discount}%`} />
+              ) : (
+                ""
+              )}
               <Image src={product.image} alt={product.name} fluid />
             </Col>
+
             <Col md={3}>
               <ListGroup variant='flush'>
                 <ListGroup.Item>
@@ -92,7 +108,16 @@ const ProductScreen = ({ history, match }) => {
                     text={`${product.numReviews} reviews`}
                   />
                 </ListGroup.Item>
-                <ListGroup.Item>Price: ${product.price}</ListGroup.Item>
+                <ListGroup.Item>
+                
+                    Price: $
+                    {product.discount > 0 ? discountedPrice : product.price}
+                
+                  <p style={{ color: "#E53935", fontStyle: "italic" ,fontSize:'0.8rem'}}>
+                        
+                        Save ${addDecimals(product.price - discountedPrice)}{" "}
+                  </p>
+                </ListGroup.Item>
                 <ListGroup.Item>
                   Description: {product.description}
                 </ListGroup.Item>
@@ -105,7 +130,22 @@ const ProductScreen = ({ history, match }) => {
                     <Row>
                       <Col>Price:</Col>
                       <Col>
-                        <strong>${product.price}</strong>
+                        {product.discount > 0 ? (
+                          <strong>
+                            ${discountedPrice}
+                            <p
+                              style={{
+                                fontSize: "0.8rem",
+                                textDecorationLine: "line-through",
+                                color: "#9E9E9E",
+                              }}
+                            >
+                              ${product.price}
+                            </p>
+                          </strong>
+                        ) : (
+                          <strong>${product.price}</strong>
+                        )}
                       </Col>
                     </Row>
                   </ListGroup.Item>
@@ -127,8 +167,8 @@ const ProductScreen = ({ history, match }) => {
                           <Form.Control
                             as='select'
                             value={qty}
-                                onChange={(e) => setQty(e.target.value)}
-                                style={{color:"#fff"}}
+                            onChange={(e) => setQty(e.target.value)}
+                            style={{ color: "#fff" }}
                           >
                             {[...Array(product.countInStock).keys()].map(
                               (x) => (
@@ -157,6 +197,7 @@ const ProductScreen = ({ history, match }) => {
               </Card>
             </Col>
           </Row>
+
           <Row>
             <Col md={6}>
               <h2>Reviews</h2>

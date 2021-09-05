@@ -10,6 +10,7 @@ const products = [
     countInStock: 3,
     rating: 0,
     numReviews: 0,
+    discount: 10,
   },
   {
     name: "iPhone 11 Pro 256GB Memory",
@@ -22,6 +23,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
+    discount: 5,
   },
   {
     name: "Cannon EOS 80D DSLR Camera",
@@ -34,6 +36,7 @@ const products = [
     countInStock: 0,
     rating: 0,
     numReviews: 0,
+    discount: 20,
   },
   {
     name: "Sony Playstation 4 Pro White Version",
@@ -46,6 +49,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
+    discount: 27,
   },
   {
     name: "Logitech G-Series Gaming Mouse",
@@ -58,6 +62,7 @@ const products = [
     countInStock: 7,
     rating: 0,
     numReviews: 0,
+    discount: 13,
   },
   {
     name: "Amazon Echo Dot 3rd Generation",
@@ -70,6 +75,7 @@ const products = [
     countInStock: 0,
     rating: 0,
     numReviews: 0,
+    discount: 0,
   },
 ];
 
