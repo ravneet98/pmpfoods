@@ -38,7 +38,7 @@ const Header = () => {
             <Nav className='ms-auto'>
               <LinkContainer to='/cart'>
                 <Nav.Link>
-                  <i className='fas fa-shopping-cart'></i> Cart
+                  <i className='fas fa-shopping-bag'></i> Bag
                 </Nav.Link>
               </LinkContainer>
               {userInfo ? (
@@ -53,7 +53,7 @@ const Header = () => {
               ) : (
                 <LinkContainer to='/login'>
                   <Nav.Link>
-                    <i className='fas fa-user'></i> Sign In
+                    <i className='fas fa-user-circle'></i> Sign In
                   </Nav.Link>
                 </LinkContainer>
               )}

@@ -11,9 +11,9 @@ const Product = ({ product }) => {
   
   
   return (
-    <Card className='my-3 p-3 rounded'>
+    <Card className='my-3 p-3' style={{ height: "28rem" }}>
       {product.discount > 0 ? (
-        <Discount  discount={`-${product.discount}%`} />
+        <Discount discount={`-${product.discount}%`} />
       ) : (
         ""
       )}
@@ -44,7 +44,7 @@ const Product = ({ product }) => {
                 color: "#9E9E9E",
               }}
             >
-              ${product.price} 
+              ${product.price}
             </Card.Text>
           </Card.Text>
         ) : (

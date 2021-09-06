@@ -24,7 +24,7 @@ const SearchBox = ({ history }) => {
         style={{ color: "#fff" }}
       ></Form.Control>
       <Button type='submit' className='btn btn-secondary my-2 my-sm-0'>
-        Search
+        <i className='fas fa-search'></i>
       </Button>
     </Form>
   );
