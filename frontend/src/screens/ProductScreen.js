@@ -109,13 +109,16 @@ const ProductScreen = ({ history, match }) => {
                   />
                 </ListGroup.Item>
                 <ListGroup.Item>
-                
-                    Price: $
-                    {product.discount > 0 ? discountedPrice : product.price}
-                
-                  <p style={{ color: "#E53935", fontStyle: "italic" ,fontSize:'0.8rem'}}>
-                        
-                        Save ${addDecimals(product.price - discountedPrice)}{" "}
+                  Price: $
+                  {product.discount > 0 ? discountedPrice : product.price}
+                  <p
+                    style={{
+                      color: "#E53935",
+                      fontStyle: "italic",
+                      fontSize: "0.8rem",
+                    }}
+                  >
+                    Save ${addDecimals(product.price - discountedPrice)}{" "}
                   </p>
                 </ListGroup.Item>
                 <ListGroup.Item>
@@ -246,6 +249,7 @@ const ProductScreen = ({ history, match }) => {
                           row='3'
                           value={comment}
                           onChange={(e) => setComment(e.target.value)}
+                          style={{ color: "#fff" }}
                         ></Form.Control>
                       </Form.Group>
                       <Button
