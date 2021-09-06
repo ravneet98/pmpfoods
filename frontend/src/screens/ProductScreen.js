@@ -233,6 +233,7 @@ const ProductScreen = ({ history, match }) => {
                           as='select'
                           value={rating}
                           onChange={(e) => setRating(e.target.value)}
+                          style={{ color: "#fff" }}
                         >
                           <option value=''>Select...</option>
                           <option value='1'>1 - Poor</option>
