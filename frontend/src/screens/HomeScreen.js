@@ -37,11 +37,20 @@ const HomeScreen = ({ match }) => {
           {!keyword ? (
             <ProductCarousel />
           ) : (
-            <Link to='/' className='btn btn-light'>
+            <Link to='/' class='btn btn-secondary'>
               Go Back
             </Link>
           )}
-          <h1>Latest Products</h1>
+          {Object.keys(products).length > 0 ? (
+            !keyword ? (
+              <h1>Latest Products</h1>
+            ) : (
+              <h1>Results</h1>
+            )
+          ) : (
+            <h1>Nothing Found! Please Try again</h1>
+          )}
+
           <Row>
             {products.map((product) => (
               <Col key={product._id} sm={12} md={6} lg={4} xl={3}>
@@ -57,7 +66,7 @@ const HomeScreen = ({ match }) => {
         </>
       )}
     </>
-  )
+  );
 }
 
 export default HomeScreen

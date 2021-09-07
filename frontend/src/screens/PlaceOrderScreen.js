@@ -39,7 +39,7 @@ const discountedPrice = (price, discount) => {
       0
     )
   );
-  cart.shippingPrice = addDecimals(cart.itemsPrice > 100 ? 0 : 100);
+  cart.shippingPrice = addDecimals(cart.itemsPrice > 100 ? 0 : 10);
   cart.taxPrice = addDecimals(Number((0.15 * (cart.itemsPrice-cart.itemsDiscount)).toFixed(2)));
   
   cart.totalPrice = (

@@ -11,7 +11,7 @@ const Product = ({ product }) => {
   
   
   return (
-    <Card className='my-3 p-3' style={{ height: "28rem" }}>
+    <Card className='my-3 p-3' style={{ height: "30rem" }}>
       {product.discount > 0 ? (
         <Discount discount={`-${product.discount}%`} />
       ) : (

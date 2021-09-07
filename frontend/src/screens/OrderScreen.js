@@ -48,7 +48,10 @@ const addDecimal = (num) => {
     
 
     order.itemsPrice = addDecimals(
-      order.orderItems.reduce((acc, item) => acc + item.price * item.qty, 0)
+      order.orderItems.reduce(
+        (acc, item) => acc + discountedPrice(item.price,item.discount) * item.qty,
+        0
+      )
     );
   }
 
@@ -165,6 +168,18 @@ const addDecimal = (num) => {
                           {discountedPrice(item.price, item.discount)} = $
                           {item.qty *
                             discountedPrice(item.price, item.discount)}
+                          {item.discount > 0 ? (<p
+                            style={{
+                              fontSize: "0.95rem",
+                              textDecorationLine: "line-through",
+                              color: "#9E9E9E",
+                            }}
+                          >
+                            {item.qty} x $
+                            {item.price} = $
+                            {item.qty *
+                              item.price}
+                          </p>) : (<p></p>)}
                         </Col>
                       </Row>
                     </ListGroup.Item>
@@ -198,6 +213,7 @@ const addDecimal = (num) => {
                   <Col>${order.taxPrice}</Col>
                 </Row>
               </ListGroup.Item>
+
               <ListGroup.Item>
                 <Row>
                   <Col>Total</Col>
