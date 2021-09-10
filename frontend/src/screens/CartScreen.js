@@ -64,7 +64,7 @@ const CartScreen = ({ match, location, history }) => {
                   </Col>
                   {item.discount > 0 ? (
                     <Col md={2}>
-                      ${discountedPrice(item.price, item.discount)}{" "}
+                      £{discountedPrice(item.price, item.discount)}{" "}
                       <p
                         style={{
                           fontSize: "0.8rem",
@@ -72,11 +72,11 @@ const CartScreen = ({ match, location, history }) => {
                           color: "#9E9E9E",
                         }}
                       >
-                        ${addDecimals(item.price)}
+                        £{addDecimals(item.price)}
                       </p>
                     </Col>
                   ) : (
-                    <Col md={2}>${item.price}</Col>
+                    <Col md={2}>£{item.price}</Col>
                   )}
 
                   <Col md={2}>
@@ -120,15 +120,17 @@ const CartScreen = ({ match, location, history }) => {
                 Subtotal ({cartItems.reduce((acc, item) => acc + item.qty, 0)})
                 items
               </h2>
-              <h2>$
-              {cartItems
-                .reduce(
-                  (acc, item) =>
-                    acc + item.qty * discountedPrice(item.price, item.discount),
-                  0
-                )
+              <h2>
+                £
+                {cartItems
+                  .reduce(
+                    (acc, item) =>
+                      acc +
+                      item.qty * discountedPrice(item.price, item.discount),
+                    0
+                  )
                   .toFixed(2)}
-                </h2>
+              </h2>
               <p
                 style={{
                   color: "#E53935",
@@ -136,12 +138,13 @@ const CartScreen = ({ match, location, history }) => {
                   fontSize: "0.8rem",
                 }}
               >
-                Save $
+                Save £
                 {cartItems
                   .reduce(
                     (acc, item) =>
                       acc +
-                      (item.qty * item.price)-(item.qty * discountedPrice(item.price, item.discount)),
+                      item.qty * item.price -
+                      item.qty * discountedPrice(item.price, item.discount),
                     0
                   )
                   .toFixed(2)}

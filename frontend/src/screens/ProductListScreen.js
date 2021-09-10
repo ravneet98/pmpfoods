@@ -123,7 +123,7 @@ const ProductListScreen = ({ history, match }) => {
                   <td>{product.name}</td>
                   {product.discount > 0 ? (
                     <td>
-                      ${discountedPrice(product.price, product.discount)}{" "}
+                      £{discountedPrice(product.price, product.discount)}{" "}
                       <p
                         style={{
                           fontSize: "0.8rem",
@@ -131,11 +131,11 @@ const ProductListScreen = ({ history, match }) => {
                           color: "#9E9E9E",
                         }}
                       >
-                        ${product.price}
+                        £{product.price}
                       </p>
                     </td>
                   ) : (
-                    <td>${product.price}</td>
+                    <td>£{product.price}</td>
                   )}
                   <td>{product.discount}%</td>
                   <td>{product.category}</td>

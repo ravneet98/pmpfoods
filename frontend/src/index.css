@@ -21,11 +21,7 @@ h2 {
 }
 
 /* carousel */
-.carousel-item-next,
-.carousel-item-prev,
-.carousel-item.active {
-  display: flex;
-}
+
 .carousel-caption {
   position: absolute;
   top: 0;
@@ -34,24 +30,56 @@ h2 {
 .carousel-caption h2 {
   color: #fff;
 }
-
-.carousel img {
-  height: 300px;
-
-  padding: 10px;
-  margin: 10px;
-  margin-top: 60px;
-  border-radius: 5%;
-  margin-left: auto;
-  margin-right: auto;
+.shipmentContainer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+ 
+  /* height: 120px; */
+  margin-top: 80px;
+  margin-bottom: 80px;
+  background-color: #303030;
 }
-.carousel a {
-  margin: 0 auto;
+
+
+.shipmentContainer > .innerShipmentContainer  {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  border-left: 2px solid #deddd7;
+  width: 33.33%;
+  /* align-items: center; */
 }
-@media (max-width: 900px) {
-  .carousel-caption h2 {
-    font-size: 2.5vw;
-  }
+
+@media only screen and (max-width: 768px) {
+  .shipmentContainer{
+  flex-direction: column;
+  border: 0px solid #deddd7;
+  /* height: 120px; */
+}
+  .shipmentContainer > .innerShipmentContainer  {
+  width: 100%;
+  /* align-items: center; */
+}
+
+}
+ .innerShipmentContainer:nth-child(1){
+  border-left: 0px ;
+  
+}
+.shipmentContainer > .innerShipmentContainer > img{
+  width: 50px;
+  height: 50px;
+  margin-right: 20;
+ 
+  
+}
+
+.sub-header {
+  background-color: #444;
+   height: 40px;
+   align-content: center;
+
 }
 html,
 body,

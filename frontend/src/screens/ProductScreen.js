@@ -109,7 +109,7 @@ const ProductScreen = ({ history, match }) => {
                   />
                 </ListGroup.Item>
                 <ListGroup.Item>
-                  Price: $
+                  Price: £
                   {product.discount > 0 ? discountedPrice : product.price}
                   <p
                     style={{
@@ -118,7 +118,7 @@ const ProductScreen = ({ history, match }) => {
                       fontSize: "0.8rem",
                     }}
                   >
-                    Save ${addDecimals(product.price - discountedPrice)}{" "}
+                    Save £{addDecimals(product.price - discountedPrice)}{" "}
                   </p>
                 </ListGroup.Item>
                 <ListGroup.Item>
@@ -135,7 +135,7 @@ const ProductScreen = ({ history, match }) => {
                       <Col>
                         {product.discount > 0 ? (
                           <strong>
-                            ${discountedPrice}
+                            £{discountedPrice}
                             <p
                               style={{
                                 fontSize: "0.8rem",
@@ -143,11 +143,11 @@ const ProductScreen = ({ history, match }) => {
                                 color: "#9E9E9E",
                               }}
                             >
-                              ${product.price}
+                              £{product.price}
                             </p>
                           </strong>
                         ) : (
-                          <strong>${product.price}</strong>
+                          <strong>£{product.price}</strong>
                         )}
                       </Col>
                     </Row>

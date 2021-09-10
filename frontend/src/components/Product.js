@@ -44,11 +44,11 @@ const Product = ({ product }) => {
                 color: "#9E9E9E",
               }}
             >
-              ${product.price}
+              £{product.price}
             </Card.Text>
           </Card.Text>
         ) : (
-          <Card.Text as='h3'>${product.price}</Card.Text>
+          <Card.Text as='h3'>£{product.price}</Card.Text>
         )}
       </Card.Body>
     </Card>

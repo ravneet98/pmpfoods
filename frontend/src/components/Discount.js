@@ -5,8 +5,8 @@ const Discount = ({ discount }) => {
       <div
         class='badge rounded-pill bg-danger'
         style={{
-          width: "50px",
-          height: "50px",
+          width: "55px",
+          height: "55px",
           background: "#E53935",
           borderRadius: "100%",
           position: "relative",

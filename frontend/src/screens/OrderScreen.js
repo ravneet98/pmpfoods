@@ -164,22 +164,24 @@ const addDecimal = (num) => {
                           </Link>
                         </Col>
                         <Col md={4}>
-                          {item.qty} x $
-                          {discountedPrice(item.price, item.discount)} = $
+                          {item.qty} x £
+                          {discountedPrice(item.price, item.discount)} = £
                           {item.qty *
                             discountedPrice(item.price, item.discount)}
-                          {item.discount > 0 ? (<p
-                            style={{
-                              fontSize: "0.95rem",
-                              textDecorationLine: "line-through",
-                              color: "#9E9E9E",
-                            }}
-                          >
-                            {item.qty} x $
-                            {item.price} = $
-                            {item.qty *
-                              item.price}
-                          </p>) : (<p></p>)}
+                          {item.discount > 0 ? (
+                            <p
+                              style={{
+                                fontSize: "0.95rem",
+                                textDecorationLine: "line-through",
+                                color: "#9E9E9E",
+                              }}
+                            >
+                              {item.qty} x £{item.price} = £
+                              {item.qty * item.price}
+                            </p>
+                          ) : (
+                            <p></p>
+                          )}
                         </Col>
                       </Row>
                     </ListGroup.Item>
@@ -198,26 +200,26 @@ const addDecimal = (num) => {
               <ListGroup.Item>
                 <Row>
                   <Col>Items</Col>
-                  <Col>${order.itemsPrice}</Col>
+                  <Col>£{order.itemsPrice}</Col>
                 </Row>
               </ListGroup.Item>
               <ListGroup.Item>
                 <Row>
                   <Col>Shipping</Col>
-                  <Col>${order.shippingPrice}</Col>
+                  <Col>£{order.shippingPrice}</Col>
                 </Row>
               </ListGroup.Item>
               <ListGroup.Item>
                 <Row>
                   <Col>Tax</Col>
-                  <Col>${order.taxPrice}</Col>
+                  <Col>£{order.taxPrice}</Col>
                 </Row>
               </ListGroup.Item>
 
               <ListGroup.Item>
                 <Row>
                   <Col>Total</Col>
-                  <Col>${order.totalPrice}</Col>
+                  <Col>£{order.totalPrice}</Col>
                 </Row>
               </ListGroup.Item>
               {!order.isPaid && (

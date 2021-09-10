@@ -9,7 +9,31 @@ import Paginate from '../components/Paginate'
 import ProductCarousel from '../components/ProductCarousel'
 import Meta from '../components/Meta'
 import { listProducts } from '../actions/productActions'
+import Shipped from "../assets/shipped.png";
+import Time from "../assets/back-in-time.png";
+import Pay from "../assets/credit-card.png";
 
+
+const data = [
+  {
+    id: 1,
+    img: Shipped,
+    title: "FREE SHIPPING",
+    description: "For all order over 99£",
+  },
+  {
+    id: 2,
+    img: Time,
+    title: "DELIVERY ON TIME",
+    description: "If good have prolems",
+  },
+  {
+    id: 3,
+    img: Pay,
+    title: "SECURE PAYMENT",
+    description: "100% secure payment",
+  },
+];
 const HomeScreen = ({ match }) => {
   const keyword = match.params.keyword
 
@@ -27,20 +51,19 @@ const HomeScreen = ({ match }) => {
   return (
     <>
       <Meta />
-
+      {!keyword ? (
+        <ProductCarousel />
+      ) : (
+        <Link to='/' class='btn btn-secondary'>
+          Go Back
+        </Link>
+      )}
       {loading ? (
         <Loader />
       ) : error ? (
         <Message variant='danger'>{error}</Message>
       ) : (
         <>
-          {!keyword ? (
-            <ProductCarousel />
-          ) : (
-            <Link to='/' class='btn btn-secondary'>
-              Go Back
-            </Link>
-          )}
           {Object.keys(products).length > 0 ? (
             !keyword ? (
               <h1>Latest Products</h1>
@@ -63,6 +86,19 @@ const HomeScreen = ({ match }) => {
             page={page}
             keyword={keyword ? keyword : ""}
           />
+          <div className='shipmentContainer'>
+            {data.map((item, index) => (
+              <div key={index} className='innerShipmentContainer'>
+                <img src={item.img} alt='Logo'  />
+                <div style={{ marginLeft: 30 }}>
+                  <h1 style={{ fontSize: 18, fontWeight: "bold" }}>
+                    {item.title}
+                  </h1>
+                  <p>{item.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </>
       )}
     </>
