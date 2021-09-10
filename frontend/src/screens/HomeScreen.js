@@ -86,7 +86,7 @@ const HomeScreen = ({ match }) => {
             page={page}
             keyword={keyword ? keyword : ""}
           />
-          <div className='shipmentContainer'>
+              {/*<div className='shipmentContainer'>
             {data.map((item, index) => (
               <div key={index} className='innerShipmentContainer'>
                 <img src={item.img} alt='Logo'  />
@@ -98,7 +98,7 @@ const HomeScreen = ({ match }) => {
                 </div>
               </div>
             ))}
-          </div>
+            </div>*/}
         </>
       )}
     </>

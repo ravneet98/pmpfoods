@@ -171,7 +171,7 @@ const ProductScreen = ({ history, match }) => {
                             as='select'
                             value={qty}
                             onChange={(e) => setQty(e.target.value)}
-                            style={{ color: "#fff" }}
+                          
                           >
                             {[...Array(product.countInStock).keys()].map(
                               (x) => (
@@ -233,7 +233,7 @@ const ProductScreen = ({ history, match }) => {
                           as='select'
                           value={rating}
                           onChange={(e) => setRating(e.target.value)}
-                          style={{ color: "#fff" }}
+                        
                         >
                           <option value=''>Select...</option>
                           <option value='1'>1 - Poor</option>
@@ -250,7 +250,7 @@ const ProductScreen = ({ history, match }) => {
                           row='3'
                           value={comment}
                           onChange={(e) => setComment(e.target.value)}
-                          style={{ color: "#fff" }}
+                        
                         ></Form.Control>
                       </Form.Group>
                       <Button

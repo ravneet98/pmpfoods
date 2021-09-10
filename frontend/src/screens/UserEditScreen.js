@@ -69,7 +69,7 @@ const UserEditScreen = ({ match, history }) => {
                 placeholder='Enter name'
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                style={{ color: "#fff" }}
+              
               ></Form.Control>
             </Form.Group>
 
@@ -80,7 +80,7 @@ const UserEditScreen = ({ match, history }) => {
                 placeholder='Enter email'
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                style={{ color: "#fff" }}
+               
               ></Form.Control>
             </Form.Group>
 
@@ -90,7 +90,7 @@ const UserEditScreen = ({ match, history }) => {
                 label='Is Admin'
                 checked={isAdmin}
                 onChange={(e) => setIsAdmin(e.target.checked)}
-                style={{ color: "#fff" }}
+             
               ></Form.Check>
             </Form.Group>
 

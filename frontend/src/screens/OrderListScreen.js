@@ -31,7 +31,7 @@ const OrderListScreen = ({ history }) => {
       ) : error ? (
         <Message variant='danger'>{error}</Message>
       ) : (
-        <Table striped bordered hover responsive className='table-dark'>
+        <Table striped bordered hover responsive className='table-light'>
           <thead>
             <tr>
               <th>ID</th>

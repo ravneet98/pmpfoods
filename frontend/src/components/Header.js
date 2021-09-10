@@ -17,16 +17,17 @@ const Header = () => {
 
   return (
     <header>
-      <Navbar bg='dark' variant='dark' expand='lg' collapseOnSelect>
+      <Navbar bg='light' variant='light' expand='lg' collapseOnSelect>
         <Container>
           <LinkContainer to='/'>
             <Navbar.Brand>
-              <img
+              {/*<img
                 src='/logo.png'
                 height='60'
                 className='d-inline-block align-top'
                 alt='PMP Foods LTD'
-              />
+              />*/}
+              <span class='navbar-brand'>PMP Foods</span>
             </Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
@@ -60,10 +61,7 @@ const Header = () => {
                 </LinkContainer>
               )}
               {userInfo && userInfo.isAdmin && (
-                <NavDropdown
-                  title={<strong>{'More'}</strong>}
-                  id='adminmenu'
-                >
+                <NavDropdown title={<strong>{"More"}</strong>} id='adminmenu'>
                   <LinkContainer to='/admin/userlist'>
                     <NavDropdown.Item>Users</NavDropdown.Item>
                   </LinkContainer>
@@ -80,70 +78,55 @@ const Header = () => {
         </Container>
       </Navbar>
 
-      <Navbar className='sub-header' variant='dark' expand='sm'>
+      <Navbar
+        bg='light'
+        variant='light'
+        expand='lg'
+        collapseOnSelect
+        expand='sm'
+        className='sub-header'
+      >
         <Container>
-          <Nav className='ms-start h-20'>
-            <Dropdown as={NavItem} renderMenuOnMount={true}>
-              <Dropdown.Toggle as={NavLink}>
-                <strong>
-                  {" "}
-                  <i className='fab fa-buffer'></i> ALL CATEGORIES
-                </strong>
-              </Dropdown.Toggle>
-              <Dropdown.Menu>
-                <Dropdown.Item>
-                  <LinkContainer to='/search/cat@Fruits'>
-                    <Nav.Link>Fresh Fruits</Nav.Link>
-                  </LinkContainer>
-                </Dropdown.Item>
-                <Dropdown.Item>
-                  <LinkContainer to='/search/cat@Vegetables'>
-                    <Nav.Link>Fresh Vegetables</Nav.Link>
-                  </LinkContainer>
-                </Dropdown.Item>
-                <Dropdown.Item>
-                  <LinkContainer to='/search/cat@Grocery'>
-                    <Nav.Link>Grocery</Nav.Link>
-                  </LinkContainer>
-                </Dropdown.Item>
-                <Dropdown.Item>
-                  <LinkContainer to='/search/cat@Flour'>
-                    <Nav.Link>Atta &amp; Flour</Nav.Link>
-                  </LinkContainer>
-                </Dropdown.Item>
-                <Dropdown.Item>
-                  <LinkContainer to='/search/cat@Rice'>
-                    <Nav.Link>Rice &amp; Rice Products</Nav.Link>
-                  </LinkContainer>
-                </Dropdown.Item>
-                <Dropdown.Item>
-                  <LinkContainer to='/search/cat@SpicesAndHerbs'>
-                    <Nav.Link>Spices &amp; Herbs</Nav.Link>
-                  </LinkContainer>
-                </Dropdown.Item>
-                <Dropdown.Item>
-                  <LinkContainer to='/search/cat@ReadyMeals'>
-                    <Nav.Link>Ready Meals</Nav.Link>
-                  </LinkContainer>
-                </Dropdown.Item>
-                <Dropdown.Item>
-                  <LinkContainer to='/search/cat@SweetAndSnacks'>
-                    <Nav.Link>Sweets &amp; Snacks</Nav.Link>
-                  </LinkContainer>
-                </Dropdown.Item>
-                <Dropdown.Item>
-                  <LinkContainer to='/search/cat@Beverages'>
-                    <Nav.Link>Beverages</Nav.Link>
-                  </LinkContainer>
-                </Dropdown.Item>
-                <Dropdown.Item>
-                  <LinkContainer to='/search/cat@others'>
-                    <Nav.Link>Others</Nav.Link>
-                  </LinkContainer>
-                </Dropdown.Item>
-              </Dropdown.Menu>
-            </Dropdown>
-          </Nav>
+          <NavDropdown
+            title={
+              <strong>
+                <i className='fab fa-buffer'></i>
+                {" ALL CATEGORIES"}
+              </strong>
+            }
+            id='categories'
+          >
+            <LinkContainer to='/search/cat@Fruits'>
+              <NavDropdown.Item>Fresh Fruits</NavDropdown.Item>
+            </LinkContainer>
+            <LinkContainer to='search/cat@Vegetables'>
+              <NavDropdown.Item>Fresh Vegetables</NavDropdown.Item>
+            </LinkContainer>
+            <LinkContainer to='/search/cat@Grocery'>
+              <NavDropdown.Item>Grocery</NavDropdown.Item>
+            </LinkContainer>
+            <LinkContainer to='/search/cat@Flour'>
+              <NavDropdown.Item>Atta &amp; Flour</NavDropdown.Item>
+            </LinkContainer>
+            <LinkContainer to='search/cat@Rice'>
+              <NavDropdown.Item>Rice &amp; Rice Products</NavDropdown.Item>
+            </LinkContainer>
+            <LinkContainer to='/search/cat@SpicesAndHerbs'>
+              <NavDropdown.Item>Spices &amp; Herbs</NavDropdown.Item>
+            </LinkContainer>
+            <LinkContainer to='/search/cat@ReadyMeals'>
+              <NavDropdown.Item>Ready Meals</NavDropdown.Item>
+            </LinkContainer>
+            <LinkContainer to='/search/cat@SweetAndSnacks'>
+              <NavDropdown.Item>Sweets &amp; Snacks</NavDropdown.Item>
+            </LinkContainer>
+            <LinkContainer to='/search/cat@Beverages'>
+              <NavDropdown.Item>Beverages</NavDropdown.Item>
+            </LinkContainer>
+            <LinkContainer to='/search/cat@others'>
+              <NavDropdown.Item>Others</NavDropdown.Item>
+            </LinkContainer>
+          </NavDropdown>
         </Container>
       </Navbar>
     </header>

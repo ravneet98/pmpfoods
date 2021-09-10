@@ -31,7 +31,7 @@ const ProductCarousel = () => {
   ) : (
     <Carousel
       pause='hover'
-      className='bg-dark rounded'
+      className='bg-light rounded'
       variant='dark'
       style={{ height: 500, marginBottom: 50 }}
     >
@@ -59,7 +59,8 @@ const ProductCarousel = () => {
                           fontSize: 40,
                           textAlign: "center",
                           marginTop: 180,
-                          textShadow: "5px 5px 10px #424242",
+                          textShadow: "2px 2px 10px #424242",
+                          color:"#000"
                         }}
                       >
                         {p.name} (£
