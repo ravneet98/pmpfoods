@@ -30,6 +30,46 @@ const Header = () => {
               <span class='navbar-brand'>PMP Foods</span>
             </Navbar.Brand>
           </LinkContainer>
+          <NavDropdown
+            title={
+              <strong>
+                <i className='fab fa-buffer'></i>
+                {" ALL CATEGORIES"}
+              </strong>
+            }
+            id='categories'
+          >
+            <LinkContainer to='/search/cat@Fruits'>
+              <NavDropdown.Item>Fresh Fruits</NavDropdown.Item>
+            </LinkContainer>
+            <LinkContainer to='search/cat@Vegetables'>
+              <NavDropdown.Item>Fresh Vegetables</NavDropdown.Item>
+            </LinkContainer>
+            <LinkContainer to='/search/cat@Grocery'>
+              <NavDropdown.Item>Grocery</NavDropdown.Item>
+            </LinkContainer>
+            <LinkContainer to='/search/cat@Flour'>
+              <NavDropdown.Item>Atta &amp; Flour</NavDropdown.Item>
+            </LinkContainer>
+            <LinkContainer to='search/cat@Rice'>
+              <NavDropdown.Item>Rice &amp; Rice Products</NavDropdown.Item>
+            </LinkContainer>
+            <LinkContainer to='/search/cat@SpicesAndHerbs'>
+              <NavDropdown.Item>Spices &amp; Herbs</NavDropdown.Item>
+            </LinkContainer>
+            <LinkContainer to='/search/cat@ReadyMeals'>
+              <NavDropdown.Item>Ready Meals</NavDropdown.Item>
+            </LinkContainer>
+            <LinkContainer to='/search/cat@SweetAndSnacks'>
+              <NavDropdown.Item>Sweets &amp; Snacks</NavDropdown.Item>
+            </LinkContainer>
+            <LinkContainer to='/search/cat@Beverages'>
+              <NavDropdown.Item>Beverages</NavDropdown.Item>
+            </LinkContainer>
+            <LinkContainer to='/search/cat@others'>
+              <NavDropdown.Item>Others</NavDropdown.Item>
+            </LinkContainer>
+          </NavDropdown>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse id='basic-navbar-nav'>
             <Route render={({ history }) => <SearchBox history={history} />} />
@@ -78,57 +118,7 @@ const Header = () => {
         </Container>
       </Navbar>
 
-      <Navbar
-        bg='light'
-        variant='light'
-        expand='lg'
-        collapseOnSelect
-        expand='sm'
-        className='sub-header'
-      >
-        <Container>
-          <NavDropdown
-            title={
-              <strong>
-                <i className='fab fa-buffer'></i>
-                {" ALL CATEGORIES"}
-              </strong>
-            }
-            id='categories'
-          >
-            <LinkContainer to='/search/cat@Fruits'>
-              <NavDropdown.Item>Fresh Fruits</NavDropdown.Item>
-            </LinkContainer>
-            <LinkContainer to='search/cat@Vegetables'>
-              <NavDropdown.Item>Fresh Vegetables</NavDropdown.Item>
-            </LinkContainer>
-            <LinkContainer to='/search/cat@Grocery'>
-              <NavDropdown.Item>Grocery</NavDropdown.Item>
-            </LinkContainer>
-            <LinkContainer to='/search/cat@Flour'>
-              <NavDropdown.Item>Atta &amp; Flour</NavDropdown.Item>
-            </LinkContainer>
-            <LinkContainer to='search/cat@Rice'>
-              <NavDropdown.Item>Rice &amp; Rice Products</NavDropdown.Item>
-            </LinkContainer>
-            <LinkContainer to='/search/cat@SpicesAndHerbs'>
-              <NavDropdown.Item>Spices &amp; Herbs</NavDropdown.Item>
-            </LinkContainer>
-            <LinkContainer to='/search/cat@ReadyMeals'>
-              <NavDropdown.Item>Ready Meals</NavDropdown.Item>
-            </LinkContainer>
-            <LinkContainer to='/search/cat@SweetAndSnacks'>
-              <NavDropdown.Item>Sweets &amp; Snacks</NavDropdown.Item>
-            </LinkContainer>
-            <LinkContainer to='/search/cat@Beverages'>
-              <NavDropdown.Item>Beverages</NavDropdown.Item>
-            </LinkContainer>
-            <LinkContainer to='/search/cat@others'>
-              <NavDropdown.Item>Others</NavDropdown.Item>
-            </LinkContainer>
-          </NavDropdown>
-        </Container>
-      </Navbar>
+     
     </header>
   );
 };

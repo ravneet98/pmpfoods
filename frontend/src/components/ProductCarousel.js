@@ -32,7 +32,10 @@ const ProductCarousel = () => {
     <Carousel
       pause='hover'
       className='bg-light rounded'
-      variant='dark'
+      variant='light'
+      controls='true'
+      indicators='true'
+      touch='true'
       style={{ height: 500, marginBottom: 50 }}
     >
       {products.map((p) => {
@@ -60,7 +63,7 @@ const ProductCarousel = () => {
                           textAlign: "center",
                           marginTop: 180,
                           textShadow: "2px 2px 10px #424242",
-                          color:"#000"
+                          color: "#000",
                         }}
                       >
                         {p.name} (£
