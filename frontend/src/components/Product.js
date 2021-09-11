@@ -12,6 +12,7 @@ const Product = ({ product }) => {
   
   
   return (
+    product!=null?(
     <Card className='my-3 p-3 shadow' style={{ height: "32rem" }}>
       {product.discount > 0 ? (
         <Discount discount={`-${product.discount}%`} />
@@ -55,7 +56,8 @@ const Product = ({ product }) => {
           <Card.Text as='h2'>£{product.price}</Card.Text>
         )}
       </Card.Body>
-    </Card>
+      </Card>) :
+      ('')
   );
 };
 
