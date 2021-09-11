@@ -24,7 +24,7 @@ const Product = ({ product }) => {
           src={product.image}
           variant='top'
           style={{ width: '100%',
-    height: '15vw',
+    height: '20rem',
     objectFit: 'cover'}}
           
         />
