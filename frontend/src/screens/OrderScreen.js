@@ -166,8 +166,8 @@ const addDecimal = (num) => {
                         <Col md={4}>
                           {item.qty} x £
                           {discountedPrice(item.price, item.discount)} = £
-                          {item.qty *
-                            discountedPrice(item.price, item.discount)}
+                          {addDecimal(item.qty *
+                            discountedPrice(item.price, item.discount))}
                           {item.discount > 0 ? (
                             <p
                               style={{
