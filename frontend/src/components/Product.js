@@ -11,8 +11,7 @@ const Product = ({ product }) => {
   const discountedPrice = addDecimals(product.price * ((100 - product.discount) / 100));
   
   
-  return (
-    product!=null?(
+  return product != null ? (
     <Card className='my-3 p-3 shadow' style={{ height: "32rem" }}>
       {product.discount > 0 ? (
         <Discount discount={`-${product.discount}%`} />
@@ -21,10 +20,14 @@ const Product = ({ product }) => {
       )}
 
       <Link to={`/product/${product._id}`}>
-        <Card.Img src={product.image} variant='top' />
-
-        
-       
+        <Card.Img
+          src={product.image}
+          variant='top'
+          style={{ width: '100%',
+    height: '15vw',
+    objectFit: 'cover'}}
+          
+        />
       </Link>
       <Card.Body class='card-body'>
         <Link to={`/product/${product._id}`}>
@@ -56,8 +59,9 @@ const Product = ({ product }) => {
           <Card.Text as='h2'>£{product.price}</Card.Text>
         )}
       </Card.Body>
-      </Card>) :
-      ('')
+    </Card>
+  ) : (
+    ""
   );
 };
 
