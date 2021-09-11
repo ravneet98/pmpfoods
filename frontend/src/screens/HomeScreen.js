@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
-import { Row, Col } from 'react-bootstrap'
+import { Row, Col,Image,Card } from 'react-bootstrap'
 import Product from '../components/Product'
 import Message from '../components/Message'
 import Loader from '../components/Loader'
@@ -52,9 +52,9 @@ const HomeScreen = ({ match }) => {
     <>
       <Meta />
       {!keyword ? (
-        <ProductCarousel />
+        <ProductCarousel  />
       ) : (
-        <Link to='/' class='btn btn-secondary'>
+        <Link to='/' class='btn btn-primary mb-2'>
           Go Back
         </Link>
       )}
@@ -86,19 +86,47 @@ const HomeScreen = ({ match }) => {
             page={page}
             keyword={keyword ? keyword : ""}
           />
-              {/*<div className='shipmentContainer'>
+
+              {/* <Row>
             {data.map((item, index) => (
-              <div key={index} className='innerShipmentContainer'>
-                <img src={item.img} alt='Logo'  />
-                <div style={{ marginLeft: 30 }}>
-                  <h1 style={{ fontSize: 18, fontWeight: "bold" }}>
-                    {item.title}
-                  </h1>
-                  <p>{item.description}</p>
-                </div>
-              </div>
+              <Col md={4} key={index}>
+                <Card>
+                  <Row className='align-items-center'>
+                    <Col md={4}>
+                      <Image
+                        src='logo.png'
+                        alt='Logo'
+                        fluid
+                        className='d-block mx-auto img-fluid'
+                      />
+                    </Col>
+                    <Col md={8}>
+                      <h1 style={{ fontSize: 18, fontWeight: "bold" }}>
+                        {item.title}
+                      </h1>
+                      <p>{item.description}</p>
+                    </Col>
+                  </Row>
+                </Card>
+              </Col>
             ))}
-            </div>*/}
+          </Row>*/
+              }
+          {
+            <div className='shipmentContainer'>
+              {data.map((item, index) => (
+                <div key={index} className='innerShipmentContainer'>
+                  <img src={item.img} alt='Logo' />
+                  <div style={{ marginLeft: 30 }}>
+                    <h1 style={{ fontSize: 18, fontWeight: "bold" }}>
+                      {item.title}
+                    </h1>
+                    <p>{item.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          }
         </>
       )}
     </>

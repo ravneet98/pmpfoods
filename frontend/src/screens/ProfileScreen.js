@@ -123,7 +123,7 @@ const ProfileScreen = ({ location, history }) => {
         ) : errorOrders ? (
           <Message variant='danger'>{errorOrders}</Message>
         ) : (
-          <Table striped bordered hover responsive className='table-dark'>
+          <Table striped bordered hover responsive className='table-light'>
             <thead>
               <tr>
                 <th>ID</th>

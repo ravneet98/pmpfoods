@@ -8,6 +8,7 @@ import Discount from './Discount';
 import { listTopProducts } from '../actions/productActions'
 
 
+
 const ProductCarousel = () => {
   const addDecimals = (num) => {
     return (Math.round(num * 100) / 100).toFixed(2);
@@ -31,7 +32,7 @@ const ProductCarousel = () => {
   ) : (
     <Carousel
       pause='hover'
-      className='bg-light rounded'
+      className='bg-light rounded shadow'
       variant='light'
       controls='true'
       indicators='true'
@@ -49,7 +50,7 @@ const ProductCarousel = () => {
                     className='d-block w-100'
                     src={p.image}
                     alt={p.name}
-                    style={{ objectFit: "cover", height: 500 }}
+                    style={{ objectFit: "cover", maxheight: 450, maxWidth:450 }}
                   />
                 </Col>
 

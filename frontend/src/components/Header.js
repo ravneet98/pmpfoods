@@ -6,28 +6,37 @@ import { Navbar, Nav, Container, NavDropdown,Dropdown,NavItem,NavLink } from "re
 import SearchBox from "./SearchBox";
 import { logout } from "../actions/userActions";
 const Header = () => {
+  
   const dispatch = useDispatch();
 
   const userLogin = useSelector((state) => state.userLogin);
   const { userInfo } = userLogin;
+  
 
   const logoutHandler = () => {
     dispatch(logout());
   };
+  
 
   return (
     <header>
-      <Navbar bg='light' variant='light' expand='lg' collapseOnSelect>
+      <Navbar
+        bg='light'
+        variant='light'
+        expand='lg'
+        collapseOnSelect
+        className='shadow-sm'
+      >
         <Container>
           <LinkContainer to='/'>
             <Navbar.Brand>
-              {/*<img
+            <img
                 src='/logo.png'
                 height='60'
                 className='d-inline-block align-top'
                 alt='PMP Foods LTD'
-              />*/}
-              <span class='navbar-brand'>PMP Foods</span>
+              />
+             
             </Navbar.Brand>
           </LinkContainer>
           <NavDropdown
@@ -83,7 +92,7 @@ const Header = () => {
               </LinkContainer>
               {userInfo ? (
                 <NavDropdown
-                  title={<strong>{userInfo.name}</strong>}
+                  title={<strong >{userInfo.name}</strong>}
                   id='username'
                 >
                   <LinkContainer to='/profile'>
@@ -117,8 +126,6 @@ const Header = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-
-     
     </header>
   );
 };

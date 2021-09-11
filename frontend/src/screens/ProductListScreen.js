@@ -104,7 +104,7 @@ const ProductListScreen = ({ history, match }) => {
         <Message variant='danger'>{error}</Message>
       ) : (
         <>
-          <Table striped bordered hover responsive className='table-light'>
+          <Table striped bordered hover responsive className='table-light shadow-sm'>
             <thead>
               <tr>
                 <th>ID</th>
@@ -142,7 +142,7 @@ const ProductListScreen = ({ history, match }) => {
                   <td>{product.brand}</td>
                   <td>
                     <LinkContainer to={`/admin/product/${product._id}/edit`}>
-                      <Button variant='light' className='btn-sm me-1'>
+                      <Button variant='warning' className='btn-sm me-1'>
                         <i className='fas fa-edit'></i>
                       </Button>
                     </LinkContainer>

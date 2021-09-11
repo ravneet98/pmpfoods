@@ -2,7 +2,8 @@ import React from "react";
 import { Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Rating from "./Rating";
-import  Discount  from "./Discount";
+import Discount from "./Discount";
+import { Parallax, Background } from "react-parallax";
 const Product = ({ product }) => {
   const addDecimals = (num) => {
     return (Math.round(num * 100) / 100).toFixed(2);
@@ -11,7 +12,7 @@ const Product = ({ product }) => {
   
   
   return (
-    <Card className='my-3 p-3' style={{ height: "30rem" }}>
+    <Card className='my-3 p-3 shadow' style={{ height: "32rem" }}>
       {product.discount > 0 ? (
         <Discount discount={`-${product.discount}%`} />
       ) : (
@@ -20,6 +21,9 @@ const Product = ({ product }) => {
 
       <Link to={`/product/${product._id}`}>
         <Card.Img src={product.image} variant='top' />
+
+        
+       
       </Link>
       <Card.Body class='card-body'>
         <Link to={`/product/${product._id}`}>
@@ -36,10 +40,10 @@ const Product = ({ product }) => {
 
         {product.discount > 0 ? (
           <Card.Text as='h3'>
-            ${discountedPrice}
+            £{discountedPrice}
             <Card.Text
               style={{
-                fontSize: "1rem",
+                fontSize: "0.8rem",
                 textDecorationLine: "line-through",
                 color: "#9E9E9E",
               }}
@@ -48,7 +52,7 @@ const Product = ({ product }) => {
             </Card.Text>
           </Card.Text>
         ) : (
-          <Card.Text as='h3'>£{product.price}</Card.Text>
+          <Card.Text as='h2'>£{product.price}</Card.Text>
         )}
       </Card.Body>
     </Card>

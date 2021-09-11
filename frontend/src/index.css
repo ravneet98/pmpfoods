@@ -30,6 +30,7 @@ h2 {
 .carousel-caption h2 {
   color: #fff;
 }
+
 .shipmentContainer{
   display: flex;
   flex-direction: row;
@@ -38,7 +39,7 @@ h2 {
   /* height: 120px; */
   margin-top: 80px;
   margin-bottom: 80px;
-  background-color: #303030;
+  background-color:#FAFAFA;
 }
 
 

@@ -230,7 +230,7 @@ const ProductEditScreen = ({ match, history }) => {
               ></Form.Control>
             </Form.Group>
 
-            <Button type='submit' variant='btn btn-danger' className='mt-2'>
+            <Button type='submit' variant='btn btn-info' className='mt-2'>
               Update
             </Button>
           </Form>

@@ -32,13 +32,13 @@ const discountedPrice = (price, discount) => {
       0
     )
   );
-  cart.itemsDiscount = cart.itemsPrice-addDecimals(
+  cart.itemsDiscount = addDecimals(cart.itemsPrice-addDecimals(
     cart.cartItems.reduce(
       (acc, item) =>
         acc + discountedPrice(item.price, item.discount) * item.qty,
       0
     )
-  );
+  ));
   cart.shippingPrice = addDecimals(cart.itemsPrice > 100 ? 0 : 10);
   cart.taxPrice = addDecimals(Number((0.15 * (cart.itemsPrice-cart.itemsDiscount)).toFixed(2)));
   
@@ -121,8 +121,8 @@ const discountedPrice = (price, discount) => {
                           </Link>
                         </Col>
                         <Col md={4}>
-                          {item.qty} x $
-                          {discountedPrice(item.price, item.discount)} = $
+                          {item.qty} x £
+                          {discountedPrice(item.price, item.discount)} = £
                           {item.qty *
                             discountedPrice(item.price, item.discount)}
                         </Col>
@@ -143,31 +143,31 @@ const discountedPrice = (price, discount) => {
               <ListGroup.Item>
                 <Row>
                   <Col>Items</Col>
-                  <Col>${cart.itemsPrice}</Col>
+                  <Col>£{cart.itemsPrice}</Col>
                 </Row>
               </ListGroup.Item>
               <ListGroup.Item>
                 <Row>
                   <Col>Shipping</Col>
-                  <Col>${cart.shippingPrice}</Col>
+                  <Col>£{cart.shippingPrice}</Col>
                 </Row>
               </ListGroup.Item>
               <ListGroup.Item>
                 <Row>
                   <Col>Tax</Col>
-                  <Col>${cart.taxPrice}</Col>
+                  <Col>£{cart.taxPrice}</Col>
                 </Row>
               </ListGroup.Item>
               <ListGroup.Item>
                 <Row>
                   <Col>Discount</Col>
-                  <Col>-${cart.itemsDiscount}</Col>
+                  <Col>-£{cart.itemsDiscount}</Col>
                 </Row>
               </ListGroup.Item>
               <ListGroup.Item>
                 <Row>
                   <Col>Total</Col>
-                  <Col>${cart.totalPrice}</Col>
+                  <Col>£{cart.totalPrice}</Col>
                 </Row>
               </ListGroup.Item>
               <ListGroup.Item>
@@ -176,7 +176,7 @@ const discountedPrice = (price, discount) => {
               <ListGroup.Item>
                 <Button
                   type='button'
-                  variant='success'
+                  variant='info'
                   className='btn-block mt-2'
                   disabled={cart.cartItems === 0}
                   onClick={placeOrderHandler}

@@ -94,7 +94,7 @@ const UserEditScreen = ({ match, history }) => {
               ></Form.Check>
             </Form.Group>
 
-            <Button type='submit' variant='success' className='mt-2'>
+            <Button type='submit' variant='info' className='mt-2'>
               Update
             </Button>
           </Form>
