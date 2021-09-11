@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Spinner } from "react-bootstrap";
 import { css } from "@emotion/react";
 import HashLoader from "react-spinners/HashLoader";
 import Backdrop from "./Backdrop";
@@ -17,7 +16,7 @@ const override = css`
 `;
 
 const Loader = () => {
-  let [color, setColor] = useState("#303030");
+  let [color, setColor] = useState("#000");
 
   return (
     <>

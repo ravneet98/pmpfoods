@@ -44,35 +44,34 @@ const ProductCarousel = () => {
           <Carousel.Item style={{ width: "100%", height: "100%" }}>
             {p.discount > 0 ? <Discount discount={`-${p.discount}%`} /> : ""}
             <Link to={`/product/${p._id}`}>
-              <Row>
-                <Col sm={12} md={6}>
+              <Row className='justify-content-md-center'>
+                <Col xs={12} sm={4} md={4}>
                   <img
                     className='d-block w-100'
                     src={p.image}
                     alt={p.name}
-                    style={{ objectFit: "cover", maxheight: 450, maxWidth:450 }}
+                    style={{
+                      objectFit: "cover",
+                      maxheight: 450,
+                      maxWidth: 450,
+                    }}
                   />
                 </Col>
-
-                <Col sm={12} md={6}>
-                  <Carousel.Caption>
-                    <div>
-                      <h2
-                        style={{
-                          fontWeight: "bold",
-                          fontSize: 40,
-                          textAlign: "center",
-                          marginTop: 180,
-                          textShadow: "2px 2px 10px #424242",
-                          color: "#000",
-                        }}
-                      >
-                        {p.name} (£
-                        {discountedPrice(p.price, p.discount)})
-                      </h2>
-                    </div>
-                  </Carousel.Caption>
-                </Col>
+              </Row>
+              <Row>
+                {
+                  <Col xs={12} sm={4} md={4}>
+                    <Carousel.Caption>
+                      <div>
+                        <h1
+                        >
+                          {p.name} (£
+                          {discountedPrice(p.price, p.discount)})
+                        </h1>
+                      </div>
+                    </Carousel.Caption>
+                  </Col>
+                }
               </Row>
             </Link>
           </Carousel.Item>

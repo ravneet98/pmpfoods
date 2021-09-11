@@ -19,13 +19,13 @@ const data = [
     id: 1,
     img: Shipped,
     title: "FREE SHIPPING",
-    description: "For all order over 99£",
+    description: "For all order over £10",
   },
   {
     id: 2,
     img: Time,
     title: "DELIVERY ON TIME",
-    description: "If good have prolems",
+    description: "DELIVERING ALL OVER UK",
   },
   {
     id: 3,
@@ -66,7 +66,7 @@ const HomeScreen = ({ match }) => {
         <>
           {Object.keys(products).length > 0 ? (
             !keyword ? (
-              <h1>Latest Products</h1>
+              <h1>New Arrivals</h1>
             ) : (
               <h1>Results</h1>
             )
