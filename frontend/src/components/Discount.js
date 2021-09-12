@@ -9,7 +9,7 @@ const Discount = ({ discount }) => {
           height: "55px",
           background: "#E53935",
           borderRadius: "100%",
-          position: "relative",
+        
           position: 'absolute',
           margin:'5px'
        

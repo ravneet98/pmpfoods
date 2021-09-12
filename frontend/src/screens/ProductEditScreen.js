@@ -1,6 +1,5 @@
 import axios from "axios";
 import React, { useState, useEffect } from "react";
-import Select from "react-select";
 import { Link } from "react-router-dom";
 import { Form, Button } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
@@ -10,18 +9,7 @@ import FormContainer from "../components/FormContainer";
 import { listProductDetails, updateProduct } from "../actions/productActions";
 import { PRODUCT_UPDATE_RESET } from "../constants/productConstants";
 
-const options = [
-  { value: "Fruits", label: "Fresh Fruits" },
-  { value: "Vegetables", label: "Fresh Vegetables" },
-  { value: "Grocery", label: "Grocery" },
-  { value: "Flour", label: "Atta & Flour" },
-  { value: "Rice", label: "Rice & Rice Products" },
-  { value: "SpicesAndHerbs", label: "Spices & Herbs" },
-  { value: "ReadyMeals", label: "Ready Meals" },
-  { value: "SweetAndSnacks", label: "Sweets & Snacks" },
-  { value: "Beverages", label: "Grocery" },
-  { value: "Others", label: "Others" },
-];
+
 const ProductEditScreen = ({ match, history }) => {
   const productId = match.params.id;
 
@@ -34,8 +22,7 @@ const ProductEditScreen = ({ match, history }) => {
   const [countInStock, setCountInStock] = useState(0);
   const [description, setDescription] = useState("");
   const [uploading, setUploading] = useState(false);
-  const [option, setOption] = useState();
-
+  
   const dispatch = useDispatch();
 
   const productDetails = useSelector((state) => state.productDetails);

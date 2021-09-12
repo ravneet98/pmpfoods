@@ -19,7 +19,6 @@ import dayjs from 'dayjs';
 
 const OrderScreen = ({ match, history }) => {
   const orderId = match.params.id;
- const pageNumber = match.params.pageNumber || 1;
 
   const [sdkReady, setSdkReady] = useState(false);
 
@@ -85,7 +84,7 @@ const OrderScreen = ({ match, history }) => {
         setSdkReady(true);
       }
     }
-  }, [dispatch, orderId, successPay, successDeliver, order]);
+  }, [dispatch, orderId, successPay, successDeliver, order,userInfo,history]);
 
   const successPaymentHandler = (paymentResult) => {
     console.log(paymentResult);

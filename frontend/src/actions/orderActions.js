@@ -1,5 +1,4 @@
 import axios from "axios";
-import { CART_CLEAR_ITEMS } from "../constants/cartConstants";
 import {
   ORDER_CREATE_REQUEST,
   ORDER_CREATE_SUCCESS,
@@ -20,7 +19,6 @@ import {
   ORDER_DELIVER_SUCCESS,
   ORDER_DELIVER_REQUEST,
 } from "../constants/orderConstants";
-import { updateProductCount } from "./productActions";
 import { logout } from "./userActions";
 
 export const createOrder = (order) => async (dispatch, getState) => {

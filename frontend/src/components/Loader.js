@@ -16,7 +16,7 @@ const override = css`
 `;
 
 const Loader = () => {
-  let [color, setColor] = useState("#000");
+  let [color] = useState("#000");
 
   return (
     <>

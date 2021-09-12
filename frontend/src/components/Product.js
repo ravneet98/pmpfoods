@@ -3,7 +3,6 @@ import { Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Rating from "./Rating";
 import Discount from "./Discount";
-import { Parallax, Background } from "react-parallax";
 const Product = ({ product }) => {
   const addDecimals = (num) => {
     return (Math.round(num * 100) / 100).toFixed(2);
