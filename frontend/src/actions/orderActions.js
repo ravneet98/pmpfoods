@@ -20,6 +20,7 @@ import {
   ORDER_DELIVER_SUCCESS,
   ORDER_DELIVER_REQUEST,
 } from "../constants/orderConstants";
+import { updateProductCount } from "./productActions";
 import { logout } from "./userActions";
 
 export const createOrder = (order) => async (dispatch, getState) => {
@@ -40,16 +41,16 @@ export const createOrder = (order) => async (dispatch, getState) => {
     };
 
     const { data } = await axios.post(`/api/orders`, order, config);
-
+    
     dispatch({
       type: ORDER_CREATE_SUCCESS,
       payload: data,
     });
-    dispatch({
+   /* dispatch({
       type: CART_CLEAR_ITEMS,
       payload: data,
     });
-    localStorage.removeItem("cartItems");
+    localStorage.removeItem("cartItems");*/
   } catch (error) {
     const message =
       error.response && error.response.data.message
@@ -186,7 +187,7 @@ export const deliverOrder = (order) => async (dispatch, getState) => {
   }
 };
 
-export const listMyOrders = () => async (dispatch, getState) => {
+export const listMyOrders = (pageNumber) => async (dispatch, getState) => {
   try {
     dispatch({
       type: ORDER_LIST_MY_REQUEST,
@@ -202,7 +203,10 @@ export const listMyOrders = () => async (dispatch, getState) => {
       },
     };
 
-    const { data } = await axios.get(`/api/orders/myorders`, config);
+    const { data } = await axios.get(
+      `/api/orders/myorders?pageNumber=${pageNumber}`,
+      config
+    );
 
     dispatch({
       type: ORDER_LIST_MY_SUCCESS,
@@ -223,7 +227,7 @@ export const listMyOrders = () => async (dispatch, getState) => {
   }
 };
 
-export const listOrders = () => async (dispatch, getState) => {
+export const listOrders = (pageNumber) => async (dispatch, getState) => {
   try {
     dispatch({
       type: ORDER_LIST_REQUEST,
@@ -239,7 +243,10 @@ export const listOrders = () => async (dispatch, getState) => {
       },
     };
 
-    const { data } = await axios.get(`/api/orders`, config);
+    const { data } = await axios.get(
+      `/api/orders?pageNumber=${pageNumber}`,
+      config
+    );
 
     dispatch({
       type: ORDER_LIST_SUCCESS,

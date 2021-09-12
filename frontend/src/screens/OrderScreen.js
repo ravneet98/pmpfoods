@@ -15,9 +15,11 @@ import {
   ORDER_PAY_RESET,
   ORDER_DELIVER_RESET,
 } from "../constants/orderConstants";
+import dayjs from 'dayjs';
 
 const OrderScreen = ({ match, history }) => {
   const orderId = match.params.id;
+ const pageNumber = match.params.pageNumber || 1;
 
   const [sdkReady, setSdkReady] = useState(false);
 
@@ -34,9 +36,9 @@ const OrderScreen = ({ match, history }) => {
 
   const userLogin = useSelector((state) => state.userLogin);
   const { userInfo } = userLogin;
-const addDecimal = (num) => {
-  return (Math.round(num * 100) / 100).toFixed(2);
-};
+  const addDecimal = (num) => {
+    return (Math.round(num * 100) / 100).toFixed(2);
+  };
    const discountedPrice = (price, discount) => {
      return addDecimal(price * ((100 - discount) / 100));
    };
@@ -121,7 +123,8 @@ const addDecimal = (num) => {
               </p>
               {order.isDelivered ? (
                 <Message variant='success'>
-                  Delivered on {order.deliveredAt}
+                  Delivered on{" "}
+                  {dayjs(order.deliveredAt).format("DD/MM/YYYY hh:mm A")}
                 </Message>
               ) : (
                 <Message variant='danger'>Not Delivered</Message>
@@ -135,7 +138,9 @@ const addDecimal = (num) => {
                 {order.paymentMethod}
               </p>
               {order.isPaid ? (
-                <Message variant='success'>Paid on {order.paidAt}</Message>
+                <Message variant='success'>
+                  Paid on {dayjs(order.paidAt).format("DD/MM/YYYY hh:mm A")}
+                </Message>
               ) : (
                 <Message variant='danger'>Not Paid</Message>
               )}
@@ -166,8 +171,10 @@ const addDecimal = (num) => {
                         <Col md={4}>
                           {item.qty} x £
                           {discountedPrice(item.price, item.discount)} = £
-                          {addDecimal(item.qty *
-                            discountedPrice(item.price, item.discount))}
+                          {addDecimal(
+                            item.qty *
+                              discountedPrice(item.price, item.discount)
+                          )}
                           {item.discount > 0 ? (
                             <p
                               style={{
@@ -177,7 +184,7 @@ const addDecimal = (num) => {
                               }}
                             >
                               {item.qty} x £{item.price} = £
-                              {item.qty * item.price}
+                              {addDecimal(item.qty * item.price)}
                             </p>
                           ) : (
                             <p></p>
@@ -192,7 +199,7 @@ const addDecimal = (num) => {
           </ListGroup>
         </Col>
         <Col md={4}>
-          <Card >
+          <Card>
             <ListGroup variant='flush'>
               <ListGroup.Item>
                 <h2>Order Summary</h2>

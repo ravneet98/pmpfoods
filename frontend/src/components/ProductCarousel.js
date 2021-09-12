@@ -1,13 +1,11 @@
 import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { Carousel, Row, Col } from "react-bootstrap";
+import { Carousel, Row, Col, Card } from "react-bootstrap";
 import { useDispatch, useSelector } from 'react-redux'
 import Loader from './Loader'
 import Message from './Message'
 import Discount from './Discount';
 import { listTopProducts } from '../actions/productActions'
-
-
 
 const ProductCarousel = () => {
   const addDecimals = (num) => {
@@ -39,6 +37,7 @@ const ProductCarousel = () => {
       touch='true'
       style={{ height: 500, marginBottom: 50 }}
     >
+     
       {products.map((p) => {
         return (
           <Carousel.Item style={{ width: "100%", height: "100%" }}>
@@ -46,14 +45,15 @@ const ProductCarousel = () => {
             <Link to={`/product/${p._id}`}>
               <Row className='justify-content-md-center'>
                 <Col xs={12} sm={4} md={4}>
-                  <img
+                  <Card.Img
                     className='d-block w-100'
+                    variant='bottom'
                     src={p.image}
                     alt={p.name}
                     style={{
                       objectFit: "cover",
-                      maxheight: 450,
-                      maxWidth: 450,
+                      width: "100%",
+                      height: "30rem",
                     }}
                   />
                 </Col>
@@ -63,11 +63,12 @@ const ProductCarousel = () => {
                   <Col xs={12} sm={4} md={4}>
                     <Carousel.Caption>
                       <div>
-                        <h1
-                        >
-                          {p.name} (£
-                          {discountedPrice(p.price, p.discount)})
-                        </h1>
+                     
+                          <h1>
+                            {p.name} (£
+                            {discountedPrice(p.price, p.discount)})
+                          </h1>
+                        
                       </div>
                     </Carousel.Caption>
                   </Col>

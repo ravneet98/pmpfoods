@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect,useState } from "react";
 import { Link } from "react-router-dom";
 import { Button, Row, Col, ListGroup, Image, Card } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
@@ -8,11 +8,23 @@ import { createOrder } from "../actions/orderActions";
 import { ORDER_CREATE_RESET } from "../constants/orderConstants";
 import { USER_DETAILS_RESET } from "../constants/userConstants";
 
+import {
+  ORDER_LIST_MY_RESET,
+} from "../constants/orderConstants";
+import { PRODUCT_UPDATE_STOCK_RESET } from "../constants/productConstants";
+import { removeFromCart } from "../actions/cartAction";
+import { updateProductStock } from "../actions/productActions";
+
 const PlaceOrderScreen = ({ history }) => {
   const dispatch = useDispatch();
 
   const cart = useSelector((state) => state.cart);
-
+  const { cartItems } = cart;
+  const [countInStock, setCountInStock] = useState(0);
+  const productUpdateStock = useSelector((state) => state.productUpdateStock);
+  const { success: successStockUpdate } = productUpdateStock;
+  
+  
   if (!cart.shippingAddress.address) {
     history.push("/shipping");
   } else if (!cart.paymentMethod) {
@@ -58,8 +70,36 @@ const discountedPrice = (price, discount) => {
       dispatch({ type: USER_DETAILS_RESET });
       dispatch({ type: ORDER_CREATE_RESET });
     }
+    if (successStockUpdate) {
+      console.log("PRODUCT_UPDATE_STOCK_RESET");
+      dispatch({ type: PRODUCT_UPDATE_STOCK_RESET });
+    }
+
+    if (order && success) {
+      console.log("sale del loop");
+      order.orderItems.forEach((item, i) => {
+        const updatedStock = cartItems[i].countInStock - item.qty;
+        setCountInStock(cartItems[i].countInStock - item.qty);
+        dispatch(
+          updateProductStock({
+            _id: item.product,
+            countInStock: updatedStock,
+          })
+        );
+        dispatch(removeFromCart(item.product));
+      });
+      dispatch({ type: ORDER_LIST_MY_RESET });
+    }
     // eslint-disable-next-line
-  }, [history, success]);
+  }, [
+    history,
+   dispatch,
+    success,
+    order,
+    cartItems,
+    countInStock,
+    successStockUpdate,
+  ]);
 
   const placeOrderHandler = () => {
     dispatch(

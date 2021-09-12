@@ -4,24 +4,26 @@ import { Table, Button } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import Message from "../components/Message";
 import Loader from "../components/Loader";
+import PaginateMyOrders from "../components/PaginateMyOrders";
 import { listOrders } from "../actions/orderActions";
 
-const OrderListScreen = ({ history }) => {
+const OrderListScreen = ({ history,match }) => {
   const dispatch = useDispatch();
+  const pageNumber = match.params.pageNumber || 1;
 
   const orderList = useSelector((state) => state.orderList);
-  const { loading, error, orders } = orderList;
+  const { loading, error, orders,page,pages } = orderList;
 
   const userLogin = useSelector((state) => state.userLogin);
   const { userInfo } = userLogin;
 
   useEffect(() => {
     if (userInfo && userInfo.isAdmin) {
-      dispatch(listOrders());
+      dispatch(listOrders(pageNumber));
     } else {
       history.push("/login");
     }
-  }, [dispatch, history, userInfo]);
+  }, [dispatch, history, userInfo,pageNumber]);
 
   return (
     <>
@@ -30,7 +32,8 @@ const OrderListScreen = ({ history }) => {
         <Loader />
       ) : error ? (
         <Message variant='danger'>{error}</Message>
-      ) : (
+        ) : (
+            <>
         <Table striped bordered hover responsive className='table-light shadow-sm'>
           <thead>
             <tr>
@@ -74,7 +77,8 @@ const OrderListScreen = ({ history }) => {
               </tr>
             ))}
           </tbody>
-        </Table>
+            </Table>
+            <PaginateMyOrders pages={pages} page={page} isAdmin={true} /></>
       )}
     </>
   );
