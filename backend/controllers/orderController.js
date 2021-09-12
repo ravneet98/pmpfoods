@@ -104,12 +104,13 @@ const updateOrderToDelivered = asyncHandler(async (req, res) => {
 const getMyOrders = asyncHandler(async (req, res) => {
    const pageSize = 10;
    const page = Number(req.query.pageNumber) || 1;
-const count = await Order.countDocuments();
-  const orders = await Order.find({ user: req.user._id }).sort({
+    
+    const orders = await Order.find({ user: req.user._id }).sort({
     createdAt: "desc",
-  }).limit(pageSize)
+    }).limit(pageSize)
     .skip(pageSize * (page - 1));
-  res.json({ orders, page, pages: Math.ceil(count / pageSize) });
+    const count = await Order.find({ user: req.user._id }).countDocuments();
+    res.json({ orders, page, pages: Math.ceil(count / pageSize) });
 });
 
 // @desc    Get all orders

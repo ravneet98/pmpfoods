@@ -43,8 +43,9 @@ const ProfileScreen = ({ location, history,match }) => {
         setName(user.name);
         setEmail(user.email);
       }
+       dispatch(listMyOrders(pageNumber));
     }
-    dispatch(listMyOrders(pageNumber));
+   
    
   }, [dispatch, history, userInfo, user, success,pageNumber]);
 
