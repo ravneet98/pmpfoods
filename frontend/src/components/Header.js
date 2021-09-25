@@ -51,7 +51,7 @@ const Header = () => {
             <LinkContainer to='/search/cat@Fruits'>
               <NavDropdown.Item>Fresh Fruits</NavDropdown.Item>
             </LinkContainer>
-            <LinkContainer to='search/cat@Vegetables'>
+            <LinkContainer to='/search/cat@Vegetables'>
               <NavDropdown.Item>Fresh Vegetables</NavDropdown.Item>
             </LinkContainer>
             <LinkContainer to='/search/cat@Grocery'>
@@ -60,7 +60,7 @@ const Header = () => {
             <LinkContainer to='/search/cat@Flour'>
               <NavDropdown.Item>Atta &amp; Flour</NavDropdown.Item>
             </LinkContainer>
-            <LinkContainer to='search/cat@Rice'>
+            <LinkContainer to='/search/cat@Rice'>
               <NavDropdown.Item>Rice &amp; Rice Products</NavDropdown.Item>
             </LinkContainer>
             <LinkContainer to='/search/cat@SpicesAndHerbs'>
