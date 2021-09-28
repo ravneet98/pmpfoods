@@ -1166,7 +1166,7 @@ const products = [
   },
   {
     name: "Niharti Alsi Oil 250ml",
-    image: "/images0005482_niharti-alsi-oil-250ml.jpeg/",
+    image: "/images/0005482_niharti-alsi-oil-250ml.jpeg",
     description: "Niharti Alsi Oil 250ml",
     brand: "Niharti",
     category: "Grocery",
@@ -1386,7 +1386,7 @@ const products = [
   },
   {
     name: "Heera Glutinous Rice 2Kg",
-    image: "/images0004985_heera-glutinous-rice-2kg.jpeg",
+    image: "/images/0004985_heera-glutinous-rice-2kg.jpeg",
     description: "Heera Glutinous Rice 2Kg",
     brand: "Heera",
     category: "Rice",
@@ -1398,7 +1398,7 @@ const products = [
   },
   {
     name: "Heera Brown Basmati Rice 2Kg",
-    image: "/images0008561_heera-brown-basmati-rice-2kg/",
+    image: "/images/0008561_heera-brown-basmati-rice-2kg.jpeg",
     description:
       "Heera brown basmati rice is grown in the north-western Himalayas. This rice is stored for a year, and then next is cleaned and packaged. The process of aging rice, makes while cooking the rice grains are extended two to three times, do not break and do not stick, and rice has a wonderful aroma.",
     brand: "Heera",
@@ -1411,7 +1411,7 @@ const products = [
   },
   {
     name: "Heera Rose Matta Rice 2kg",
-    image: "/images0009039_heera-rose-matta-rice-2kg.jpeg",
+    image: "/images/0009039_heera-rose-matta-rice-2kg.jpeg",
     description:
       "Delivered to your door Incredible flavor Largest range of Heera Products Authentic Indian recipe",
     brand: "Heera",
@@ -1424,7 +1424,7 @@ const products = [
   },
   {
     name: "Deccan Sona Masoori Rice 5kg",
-    image: "/images0010710_deccan-sona-masoori-rice-5kg.jpeg",
+    image: "/images/0010710_deccan-sona-masoori-rice-5kg.jpeg",
     description:
       "Impart a golden touch to your meals with Sona Masoori rice – the Golden Ivy. Sourced directly from the paddy fields of Kurnool in Andhra Pradesh, this light weight and aromatic rice variety is sure to titillate your taste buds!",
     brand: "Deccan",
@@ -1450,7 +1450,7 @@ const products = [
   },
   {
     name: "Deccan kairali Palakkad Matta Rice 10kg",
-    image: "/images0010432_deccan-kairali-palakkad-matta-rice-10kg.jpeg",
+    image: "/images/0010432_deccan-kairali-palakkad-matta-rice-10kg.jpeg",
     description:
       "An unique variety of parboiled rice with an earthy favour, the Rosematta will captivate all your senses. Whether as an ingredient for delightful snacks like murukku, or as an accompaniment for game meat, its versatility makes it a must in every kitchen.",
     brand: "Deccan",
@@ -1463,7 +1463,7 @@ const products = [
   },
   {
     name: "Deccan Ponni Boiled Rice 9.08kg",
-    image: "/images0010698_deccan-ponni-boiled-rice-908kg.jpeg",
+    image: "/images/0010698_deccan-ponni-boiled-rice-908kg.jpeg",
     description:
       "Science meets taste in this eclectic mixture of two of the best known rice strains. Sourced from select regions of Tamil Nadu, our rice undergoes a little over 15 months of natural aging before any processing takes place. The non-sticky free flowing texture of aged rice combines beautifully with the fragrant,fine and tasteful Ponni – a harmonious blend that will always keep you craving for more!",
     brand: "Deccan",
@@ -1476,7 +1476,7 @@ const products = [
   },
   {
     name: "Heera Idli Rice 10kg",
-    image: "/images0009499_heera-idli-rice-10kg.jpeg",
+    image: "/images/0009499_heera-idli-rice-10kg.jpeg",
     description:
       "PERFECT BATTER & FERMENTATION: Idli rice grains are short, fat and have a white spot in the middle of the grain. Idli rice is usually soaked along with urad dal and parboiled rice and ground in a wet mixer. The resulting batter is used to make Idli, the South Indian rice cakes.",
     brand: "Heera",
@@ -1528,7 +1528,7 @@ const products = [
   },
   {
     name: "Greenfields Majoram 35g",
-    image: "/images/0012300_greenfields-majoram-35g.jpeg",
+    image: "/images/0012300_greenfields-majoram-35g.png",
     description:
       "Greenfields Marjoram is a fragrant herb, closely related to Oregano. Ideal with fish, meat and poultry, it can also be added to cheese and egg dishes such as quiches, frittatas and savoury tarts.",
     brand: "Greenfields",
