@@ -42,7 +42,6 @@ const LoginScreen = ({ location, history }) => {
             placeholder='Enter email'
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-          
           ></Form.Control>
         </Form.Group>
 
@@ -53,11 +52,15 @@ const LoginScreen = ({ location, history }) => {
             placeholder='Enter password'
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-           
           ></Form.Control>
         </Form.Group>
 
-        <Button type='submit' variant='info' className='mt-2'>
+        <Button
+          type='submit'
+          variant='success'
+          className='mt-2'
+         
+        >
           Sign In
         </Button>
       </Form>

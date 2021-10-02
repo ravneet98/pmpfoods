@@ -10,7 +10,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 0,
+    discount: 26,
   },
   {
     name: "Fresh Wood Apple Approx 500g",
@@ -23,7 +23,7 @@ const products = [
     countInStock: 17,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 18,
   },
   {
     name: "Fresh Pineapple Single",
@@ -36,7 +36,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 0,
+    discount: 6,
   },
   {
     name: "Pomegranate Single",
@@ -49,7 +49,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 20,
+    discount: 19,
   },
   {
     name: "Avocado Single",
@@ -62,7 +62,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 5,
+    discount: 3,
   },
   {
     name: "Cassava (Mogo)",
@@ -75,7 +75,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 5,
+    discount: 16,
   },
   {
     name: "White Cabbage Each",
@@ -88,7 +88,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 5,
+    discount: 27,
   },
   {
     name: "Fresh Red Potato 1KG",
@@ -101,7 +101,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 18,
   },
   {
     name: "Ginger (Washed )",
@@ -114,7 +114,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 5,
+    discount: 11,
   },
   {
     name: "Dutch Aubergine (Each)",
@@ -127,7 +127,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 5,
+    discount: 3,
   },
   {
     name: "Natco Almonds Ground 300g",
@@ -139,7 +139,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 5,
+    discount: 0,
   },
   {
     name: " Natco Butter Beans 2Kg",
@@ -152,9 +152,8 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 31,
+    discount: 29,
   },
-
   {
     name: "Natco Soya Beans 500g",
     image: "/images/0001502_natco-soya-beans-500g.jpeg",
@@ -166,7 +165,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 27,
+    discount: 2,
   },
   {
     name: "Natco Spinach Puree 795g",
@@ -179,7 +178,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 27,
+    discount: 11,
   },
   {
     name: "Brown Coconut Each",
@@ -192,7 +191,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 4,
   },
   {
     name: "Natco Almonds Ground 300g",
@@ -204,7 +203,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 8,
   },
   {
     name: "Natco Yellow Gram Flour 500g",
@@ -217,7 +216,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 8,
   },
   {
     name: "Natco Multigrain Flour(Atta) 10Kg",
@@ -230,7 +229,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 22,
   },
   {
     name: "Aryan Desi Makki Atta 4kg",
@@ -243,7 +242,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 0,
   },
   {
     name: "Elephant Atta Medium Flour 10kg",
@@ -256,7 +255,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 21,
   },
   {
     name: "Pillsbury Chakki Atta 10Kg",
@@ -269,7 +268,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 23,
   },
   {
     name: "Aashirvaad Multigrain Atta 10kg",
@@ -282,7 +281,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 15,
   },
   {
     name: "Natco Semolina (soji) Fine 500g",
@@ -295,7 +294,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 29,
   },
   {
     name: "Natco Corn Meal Fine 5Kg",
@@ -308,7 +307,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 23,
   },
   {
     name: "Tilda Basmati Rice 1kg",
@@ -321,7 +320,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 22,
   },
   {
     name: "Tilda Golden Sella Basmati Rice 5kg",
@@ -334,7 +333,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 8,
   },
   {
     name: "Daawat Original Basmati Rice 10Kg",
@@ -347,7 +346,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 29,
   },
   {
     name: "Trophy AAA Jasmine rice 5Kg",
@@ -360,7 +359,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 2,
   },
   {
     name: "Tilda Long Grain 500g",
@@ -373,7 +372,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 24,
   },
   {
     name: "Heera Thick Powa ( Rice Flakes) 1Kg",
@@ -386,7 +385,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 26,
   },
   {
     name: "Natco Easy Cook Rice 2kg",
@@ -398,9 +397,8 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 12,
   },
-
   {
     name: "Ginger (Washed )",
     image: "/images/0005264_ginger-washed-.jpeg",
@@ -412,7 +410,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 5,
+    discount: 19,
   },
   {
     name: "Dutch Aubergine (Each)",
@@ -438,7 +436,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 5,
+    discount: 24,
   },
   {
     name: "Natco Almonds Ground 300g",
@@ -450,7 +448,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 5,
+    discount: 19,
   },
   {
     name: " Natco Butter Beans 2Kg",
@@ -463,7 +461,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 31,
+    discount: 21,
   },
   {
     name: "Natco Soya Beans 500g",
@@ -476,7 +474,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 27,
+    discount: 24,
   },
   {
     name: "Natco Spinach Puree 795g",
@@ -489,7 +487,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 27,
+    discount: 25,
   },
   {
     name: "Brown Coconut Each",
@@ -502,7 +500,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 23,
   },
   {
     name: "Natco Almonds Ground 300g",
@@ -527,7 +525,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 20,
   },
   {
     name: "Natco Multigrain Flour(Atta) 10Kg",
@@ -540,7 +538,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 25,
   },
   {
     name: "Aryan Desi Makki Atta 4kg",
@@ -553,7 +551,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 8,
   },
   {
     name: "Elephant Atta Medium Flour 10kg",
@@ -566,7 +564,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 7,
   },
   {
     name: "Pillsbury Chakki Atta 10Kg",
@@ -579,7 +577,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 17,
   },
   {
     name: "Aashirvaad Multigrain Atta 10kg",
@@ -592,7 +590,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 13,
   },
   {
     name: "Natco Semolina (soji) Fine 500g",
@@ -605,7 +603,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 14,
   },
   {
     name: "Natco Corn Meal Fine 5Kg",
@@ -618,7 +616,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 15,
   },
   {
     name: "Tilda Basmati Rice 1kg",
@@ -631,7 +629,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 13,
   },
   {
     name: "Tilda Golden Sella Basmati Rice 5kg",
@@ -644,7 +642,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 20,
   },
   {
     name: "Daawat Original Basmati Rice 10Kg",
@@ -657,7 +655,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 8,
   },
   {
     name: "Trophy AAA Jasmine rice 5Kg",
@@ -670,7 +668,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 28,
   },
   {
     name: "Tilda Long Grain 500g",
@@ -683,7 +681,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 6,
   },
   {
     name: "Heera Thick Powa ( Rice Flakes) 1Kg",
@@ -696,7 +694,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 26,
   },
   {
     name: "Natco Easy Cook Rice 2kg",
@@ -708,7 +706,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 29,
   },
   {
     name: "Fresh Green Apples 4 Pcs",
@@ -721,7 +719,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 29,
   },
   {
     name: "Fresh Red Redish Bunch",
@@ -734,9 +732,8 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 17,
   },
-
   {
     name: "Fresh Small Orange 4 pcs",
     image: "/images/0012329_fresh-small-orange-4-pcs.jpeg",
@@ -748,7 +745,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 29,
   },
   {
     name: "Fresh Forelle Pears 500g ",
@@ -761,7 +758,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 6,
   },
   {
     name: "Fresh Mexican Lychees 500g",
@@ -774,7 +771,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 25,
   },
   {
     name: "Natco Mango Pulp Alphonso (Tin) 450g",
@@ -787,7 +784,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 9,
   },
   {
     name: "Fresh Wood Apple Approx 500g",
@@ -800,7 +797,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 5,
   },
   {
     name: "Fresh Apples 4 Pcs",
@@ -813,7 +810,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 24,
   },
   {
     name: "Fresh Apricots 500g",
@@ -826,7 +823,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 15,
   },
   {
     name: "Raw Mango (Green Mango)",
@@ -839,7 +836,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 21,
   },
   {
     name: "Fresh Egyptian Guava 500g",
@@ -851,7 +848,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 22,
   },
   {
     name: "Brown Coconut Each",
@@ -864,7 +861,388 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 17,
+  },
+  {
+    name: "Ayumi Naturals Henna (Mehandi) Powder 100g",
+    image: "/images/0010842_ayumi-natural-henna-mehandi-powder-100g.jpeg",
+    description:
+      "Natural conditioner for hair, Natural hair colourant, 100% natural, No artificial fragrance or preservatives, Not tested on animals, Suitable for vegetarians & vegans.",
+    brand: "Ayumi",
+    category: "others",
+    price: 3.69,
+    countInStock: 10,
+    rating: 0,
+    numReviews: 0,
+    discount: 28,
+  },
+  {
+    name: "Bajaj Almond Drops Hair Oil 200g",
+    image: "/images/0001169_bajaj-almond-drops-hair-oil-200g.jpeg",
+    description:
+      "Bajaj Almond Drops has 300% more Vitamin E than Coconut oil Contains Vitamin E Non Stick Oil For Hair & Body Almond Oil with Vitamin E that rehydrates, revitalizes, nourishes and restores the natural glow from tip-to-toe Bajaj Almond Drops Oil for healthy, strong hair and soft, supple skin",
+    brand: "Other Manufactures",
+    category: "others",
+    price: 3.99,
+    countInStock: 10,
+    rating: 0,
+    numReviews: 0,
+    discount: 21,
+  },
+  {
+    name: "Ayumi Neem Oil Organic 100% Pure 100ml",
+    image: "/images/0005397_ayumi-neem-oil-organic-100-pure-100ml.jpeg",
+    description:
+      "Organic cold-pressed neem oil, Treat Nail Fungus, Ringworm & Athletes Foot, Organic, Suitable for vegetarians & vegans",
+    brand: " Ayumi",
+    category: "others",
+    price: 4.39,
+    countInStock: 10,
+    rating: 0,
+    numReviews: 0,
+    discount: 26,
+  },
+  {
+    name: "Ayumi Neem & Tea Tree Body Wash 250ml",
+    image: "/images/0007455_ayumi-neem-tea-tree-body-wash-250ml.jpeg",
+    description:
+      "Cleansing and stimulating To balance skin tone / For an even skin tone",
+    brand: "Ayumi",
+    category: "others",
+    price: 4.99,
+    countInStock: 10,
+    rating: 0,
+    numReviews: 0,
+    discount: 14,
+  },
+  {
+    name: "Ayumi Sandalwood & Ylang Ylang Body Scrub 200ml",
+    image: "/images/0007786_ayumi-sandalwood-ylang-ylang-body-scrub-200ml.jpeg",
+    description:
+      "Gentle cleansing and exfoliating For Normal to Sensitive Skin",
+    brand: "Ayumi",
+    category: "others",
+    price: 4.99,
+    countInStock: 10,
+    rating: 0,
+    numReviews: 0,
+    discount: 6,
+  },
+  {
+    name: "Niharti Maha Narayan Oil 100ml",
+    image: "/images/0009466_niharti-maha-narayan-oil-100ml.jpeg",
+    description:
+      "Niharti Maha Narayan Oil - as known in Ayurveda, is a herbal massage oil with nourishing & rejuvenating properties for joints & muscles. Maha Narayan Oil, one of the most unique and effective oils, is a blend of herbs based on Ayurvedic mind. his unique massage oil can be used extensively for general body massage with a wide range of massage techniques.",
+    brand: "Niharti",
+    category: "others",
+    price: 5.99,
+    countInStock: 10,
+    rating: 0,
+    numReviews: 0,
+    discount: 13,
+  },
+  {
+    name: "Anuspa Kesar Soap 125g",
+    image: "/images/0002898_anuspa-kesar-soap-125g.jpeg",
+    description: "Anuspa Kesar Soap 125g",
+    brand: "PMP",
+    category: "others",
+    price: 1.49,
+    countInStock: 10,
+    rating: 0,
+    numReviews: 0,
+    discount: 23,
+  },
+  {
+    name: "Vaseline Pure Petroleum Jelly Original 250ml",
+    image: "/images/0010310_vaseline-pure-petroleum-jelly-original-250ml.jpeg",
+    description:
+      "Pure skin jelly original. Your skin has the ability to care for itself, but sometimes it needs a helping hand to stay healthy.",
+    brand: "PMP",
+    category: "others",
+    price: 3.49,
+    countInStock: 10,
+    rating: 0,
+    numReviews: 0,
+    discount: 27,
+  },
+  {
+    name: "TRS Rose Water 300ml",
+    image: "/images/0010414_trs-rose-water-300ml.jpeg",
+    description:
+      "TRS Rose water with its unique distinct flavour is used primarily to enhance the taste of Indian Sweet and Dessert Dishes, such as Barfi and Rassomalai. It is also sometimes sprinkled on Religious Gatherings to give an aura of fragrance",
+    brand: "PMP",
+    category: "others",
+    price: 1.29,
+    countInStock: 10,
+    rating: 0,
+    numReviews: 0,
+    discount: 25,
+  },
+  {
+    name: "SAC Nutmeg Oil 30ml",
+    image: "/images/0012058_sac-nutmeg-oil-30ml.jpeg",
+    description:
+      "Nutmeg has the ability to even out discolorations and pigmentation on your face. Dark spots, pigmentation, and freckles appear due to excessive exposure to the ultra-violet rays of the sun, progressing age, a side-effect of medications, or a certain skin condition. Also, Nutmeg oil helps exfoliate the skin and makes it gentle and smooth.",
+    brand: "PMP",
+    category: "others",
+    price: 0.99,
+    countInStock: 10,
+    rating: 0,
+    numReviews: 0,
+    discount: 0,
+  },
+  {
+    name: "Tilbet Snow Skin Cream Tube 50ml",
+    image: "/images/0010421_tilbet-snow-skin-cream-tube-50ml.jpeg",
+    description:
+      "Cleaning your face removes makeup, oil, dirt and other debris. It clears pores & the build up of dead skin cells, giving your skin a smoother & healthier look. It works to stimulate the production of collagen and reduce fine lines and wrinkles.",
+    brand: "PMP",
+    category: "others",
+    price: 0.99,
+    countInStock: 10,
+    rating: 0,
+    numReviews: 0,
+    discount: 18,
+  },
+  {
+    name: "Hesh Organic Arjuna Churna 100g",
+    image: "/images/0002769_hesh-organic-arjuna-churna-100g.jpeg",
+    description: "Traditional rejuvenative and tonic for the heart.",
+    brand: "Hesh Organic",
+    category: "others",
+    price: 6.49,
+    countInStock: 10,
+    rating: 0,
+    numReviews: 0,
+    discount: 2,
+  },
+  {
+    name: "Hesh Organic Jethimadh Churna 100g",
+    image: "/images/0002881_hesh-organic-jethimadh-churna-100g.jpeg",
+    description:
+      "Jethimadh powder is used as an expectorant and a carminative. This natural supplement, alongside others in the Hesh healthcare range, is derived from Ayurveda, the ancient Indian therapy, as a part of a healthy lifestyle.",
+    brand: "Hesh Organic",
+    category: "others",
+    price: 4.99,
+    countInStock: 10,
+    rating: 0,
+    numReviews: 0,
+    discount: 16,
+  },
+  {
+    name: "Hesh Tulsi Leaves Powder 100ml",
+    image: "/images/0004775_hesh-tulsi-leaves-powder-100ml.jpeg",
+    description: "Hesh Tulsi Leaves Powder 100ml",
+    brand: "Hesh Organic",
+    category: "others",
+    price: 1.99,
+    countInStock: 10,
+    rating: 0,
+    numReviews: 0,
+    discount: 20,
+  },
+  {
+    name: "Hesh Orange Peel Powder 100g",
+    image: "/images/0004885_hesh-orange-peel-powder-100g.jpeg",
+    description: "Hesh Orange Peel Powder 100g",
+    brand: "PMP",
+    category: "others",
+    price: 1.99,
+    countInStock: 10,
+    rating: 0,
+    numReviews: 0,
+    discount: 29,
+  },
+  {
+    name: "Dabur Neem Herbal Toothpaste 100ml",
+    image: "/images/0005473_dabur-neem-herbal-toothpaste-100ml.jpeg",
+    description:
+      "Dabur Neem Toothpaste contains Neem leaf extracts and Ayurvedic herbs providing complete natural oral hygiene. Neem leaves are known for their anti-bacterial, anti-fungal, antiseptic and anti-inflammatory actions. This toothpaste is considered good for inflamed or bleeding gums",
+    brand: "Dabur Vatika",
+    category: "others",
+    price: 2.99,
+    countInStock: 10,
+    rating: 0,
+    numReviews: 0,
+    discount: 19,
+  },
+  {
+    name: "Uthra Phool Makhana 100g",
+    image: "/images/0012101_uthra-phool-makhana-100g.jpeg",
+    description:
+      "Makhanas, also called fox nuts, or lotus seeds, come from a plant called Euryale Fox which grows in the stagnant water of wetlands or ponds in Eastern Asia. They have been used in Chinese medicine since 3000 years and find an important place in the science of Ayurveda too. Phool Makhana also finds significance in religious ceremonies in India and is a popular 'fasting' dish prepared during Navratri and other occasions they are low in cholesterol, fat and sodium. This makes them an ideal snack to satiate those in-between meal hunger pangs. Popular as a fasting food, its health benefits are superior to those of dry fruits such as almonds and walnuts. Some of the health benefits of makhana are: It's a good source of protein, carbohydrates, fibre, magnesium, potassium, phosphorus, iron and zinc. High in fiber and low in calories.",
+    brand: "Uthra",
+    category: "others",
+    price: 2.79,
+    countInStock: 10,
+    rating: 0,
+    numReviews: 0,
+    discount: 21,
+  },
+  {
+    name: "Uthra Kamarkas (Butea Frondosa) 100g",
+    image: "/images/0012040_uthra-kamarkas-butea-frondosa-100g.jpeg",
+    description: "Uthra Kamarkas (Butea Frondosa) 100g",
+    brand: "Uthra",
+    category: "others",
+    price: 1.59,
+    countInStock: 10,
+    rating: 0,
+    numReviews: 0,
+    discount: 0,
+  },
+  {
+    name: "Nestle Nido Milk Powder 400g",
+    image: "/images/0008040_nestle-nido-milk-powder-400g.jpeg",
+    description:
+      "This is a Vegetarian product. Quantity: 400g Type: Milk powder Contains important calciums",
+    brand: "Nestle",
+    category: "others",
+    price: 5.49,
+    countInStock: 10,
+    rating: 0,
+    numReviews: 0,
+    discount: 16,
+  },
+  {
+    name: "Aryan Jamun Juice 1000ml",
+    image: "/images/0009943_aryan-jamun-juice-1000ml.png",
+    description:
+      "The juicy pulp of Jamun/ Jambo fruit contains resin, gallic acid and tannin and the taste can vary from acidic to fairly sweet. The Jamun seed is known to contain a biochemical called ‘jambolin’ and glycoside, which is believed to check the conversion of starch into sugar. It is also a rich source of vitamins A & C. Popular name(s): Jambul, Jamun, Black Plum, Faux Pistachier, Indian Blackberry, Jambol, Doowet and Jambolan.",
+    brand: "Aryan Herbal",
+    category: "others",
+    price: 9.99,
+    countInStock: 10,
+    rating: 0,
+    numReviews: 0,
+    discount: 24,
+  },
+  {
+    name: "Heera Amla Powder 100g",
+    image: "/images/0010069_heera-amla-powder-100g.jpeg",
+    description:
+      "Heera Amla powder is traditionally consumed to relieve symptoms of chronic ailments such as diabetes, mental and memory effects, and various inflammations.",
+    brand: "Heera",
+    category: "others",
+    price: 1.49,
+    countInStock: 10,
+    rating: 0,
+    numReviews: 0,
+    discount: 18,
+  },
+  {
+    name: "Three Roses 25g",
+    image: "/images/0001271_three-roses-25g.jpeg",
+    description:
+      "Three Roses is a hand-rolled incense stick from India. It is a very nice Rose scented agarbathi.",
+    brand: "Natco",
+    category: "others",
+    price: 0.6,
+    countInStock: 10,
+    rating: 0,
+    numReviews: 0,
+    discount: 13,
+  },
+  {
+    name: "Anuspa Soap Aloevera 125g",
+    image: "/images/0002897_anuspa-soap-aloevera-125g.jpeg",
+    description:
+      "Inspired by traditional Indian Healing Wisdom, this soap is enriched with Aloe vera- Nature's silent healer, combined with Vitamin E which provides effective cleansing while maintaining skin's moisture balance and improving it's texture. This dual combination also nourishes and restores the natural vitality of skin, making it youthful and soft.Ingredients- Aloevera gel, Vitamin E.",
+    brand: "PMP",
+    category: "others",
+    price: 1.49,
+    countInStock: 10,
+    rating: 0,
+    numReviews: 0,
+    discount: 18,
+  },
+  {
+    name: "Tri-Star Masala Dabba No. 12",
+    image: "/images/0011155_tri-star-masala-dabba-no-12.jpeg",
+    description:
+      "Rust proof and hygienic. Easy to clean. Keep all your masalas at one pace. A stainless steel spice box (masala dabba) is vital to anyone serious about cooking authentic Indian food, no Indian cook would be without one. World Of Flavours Indian traditional seven piece masala dabba.",
+    brand: "Tri star",
+    category: "others",
+    price: 10.99,
+    countInStock: 10,
+    rating: 0,
+    numReviews: 0,
+    discount: 26,
+  },
+  {
+    name: "Rudraksah Heera",
+    image: "/images/0006154_rudraksah-heera.jpeg",
+    description: "Rudraksah Heera",
+    brand: "Heera",
+    category: "others",
+    price: 1,
+    countInStock: 10,
+    rating: 0,
+    numReviews: 0,
+    discount: 15,
+  },
+  {
+    name: "Mysore Sandal Soap 75g",
+    image: "/images/0005927_mysore-sandal-soap-75g.jpeg",
+    description:
+      "Give your skin a real treat every day. The scent comes from real sandalwood oil.",
+    brand: "PMP",
+    category: "others",
+    price: 1.19,
+    countInStock: 10,
+    rating: 0,
+    numReviews: 0,
+    discount: 17,
+  },
+  {
+    name: "Zodiac Naturals Salt and Pepper Shakers",
+    image: "/images/0011750_zodiac-naturals-salt-and-pepper-shakers.jpeg",
+    description: "Zodiac Naturals Salt and Pepper Shakers",
+    brand: "Zodiac ",
+    category: "others",
+    price: 4.99,
+    countInStock: 10,
+    rating: 0,
+    numReviews: 0,
+    discount: 23,
+  },
+  {
+    name: "Heera Khalija Incense Stick 15g",
+    image: "/images/0005628_heera-khalija-incense-stick-15g.jpeg",
+    description:
+      "Premium Masala Incense made of natural herbs Hand crafted in India Free of animal by-products",
+    brand: "Heera",
+    category: "others",
+    price: 1,
+    countInStock: 10,
+    rating: 0,
+    numReviews: 0,
+    discount: 27,
+  },
+  {
+    name: "Apollo - Pizza Cutter",
+    image: "/images/0011777_apollo-pizza-cutter.jpeg",
+    description: "Apollo - Pizza Cutter",
+    brand: "PMP",
+    category: "others",
+    price: 1.47,
+    countInStock: 10,
+    rating: 0,
+    numReviews: 0,
+    discount: 13,
+  },
+  {
+    name: "SIL- Inscense Sticks & Holder ",
+    image: "/images/0012154_sil-inscense-sticks-holder-40.jpeg",
+    description: "SIL- Inscense Sticks & Holder",
+    brand: "PMP",
+    category: "others",
+    price: 1.29,
+    countInStock: 10,
+    rating: 0,
+    numReviews: 0,
+    discount: 3,
   },
   {
     name: "Fresh Lemon (Single)",
@@ -890,7 +1268,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 21,
   },
   {
     name: "Red Pepper (Each)",
@@ -903,7 +1281,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 1,
   },
   {
     name: "Guvar (Cluster beans)",
@@ -916,7 +1294,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 17,
   },
   {
     name: "Fresh Carrot",
@@ -929,7 +1307,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 23,
   },
   {
     name: "Saag (Mustard Leaves) Bunch",
@@ -942,7 +1320,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 8,
   },
   {
     name: "Palak (Spinach) Bunch",
@@ -955,7 +1333,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 26,
   },
   {
     name: "Fresh Cauliflower Single",
@@ -968,7 +1346,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 27,
   },
   {
     name: "Green Chauli / Chora",
@@ -981,7 +1359,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 15,
   },
   {
     name: "Fresh Mint (Phudina) Bunch",
@@ -994,7 +1372,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 17,
   },
   {
     name: "Sweet Potato",
@@ -1007,7 +1385,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 21,
   },
   {
     name: "Tindora (Ivy gourd)",
@@ -1020,7 +1398,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 25,
   },
   {
     name: "Dudhi (Lauki) Each",
@@ -1033,7 +1411,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 6,
   },
   {
     name: "Curry Leaves Bunch",
@@ -1046,7 +1424,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 2,
   },
   {
     name: "Broccoli Single ( Approx 500g)",
@@ -1059,7 +1437,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 4,
   },
   {
     name: "Patak's Jalfrezi Spice Paste Medium 283g",
@@ -1072,7 +1450,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 11,
   },
   {
     name: "Gits Nylon Khaman Ready Mix180g",
@@ -1085,7 +1463,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 29,
   },
   {
     name: "Rishta Carrot Chili Pickle 400g",
@@ -1098,7 +1476,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 12,
   },
   {
     name: "MTR - Sambar Mix 200g",
@@ -1111,7 +1489,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 4,
   },
   {
     name: "Rishta Garlic in Brine 400g",
@@ -1124,7 +1502,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 20,
   },
   {
     name: "Patak's Hot Curry Paste Spicy 283g",
@@ -1137,7 +1515,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 15,
   },
   {
     name: "Cypressa Tahini 300g",
@@ -1149,7 +1527,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 26,
   },
   {
     name: "Amoy Dark Soy Sauce 150ml",
@@ -1162,7 +1540,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 21,
   },
   {
     name: "Niharti Alsi Oil 250ml",
@@ -1174,7 +1552,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 6,
   },
   {
     name: "Aryan Amla Murabba 1kg",
@@ -1187,7 +1565,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 19,
   },
   {
     name: "Kirkland Ground Himalayan Pink Salt 2.27kg",
@@ -1200,7 +1578,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 28,
   },
   {
     name: "Niharti Rapseed Oil 500ml",
@@ -1213,7 +1591,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 25,
   },
   {
     name: "Levi Roots Reggae Reggae Marinade 290g",
@@ -1227,7 +1605,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 1,
   },
   {
     name: "Shan Virgin Pink Himalayan Salt 400g",
@@ -1240,7 +1618,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 11,
   },
   {
     name: "Shankar Thanjavur Ponni Boiled Rice 2kg",
@@ -1253,7 +1631,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 11,
   },
   {
     name: "Shankar Andhra Sona Masoori Rice 5kg",
@@ -1266,7 +1644,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 21,
   },
   {
     name: "Sailing Boat Sushi Rice 1kg",
@@ -1292,7 +1670,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 8,
   },
   {
     name: "Daawat Original Basmati Rice 5Kg",
@@ -1305,7 +1683,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 12,
   },
   {
     name: "Kohinoor Gold Basmati Rice 5kg",
@@ -1318,7 +1696,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 19,
   },
   {
     name: "Dr. Nature Basmati Rice 5kg",
@@ -1331,7 +1709,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 1,
   },
   {
     name: "Natco Sona Masoori Rice 5Kg",
@@ -1343,7 +1721,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 12,
   },
   {
     name: "Natco Brown Basmati Rice 1Kg",
@@ -1356,7 +1734,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 13,
   },
   {
     name: "Natco Powa Thin 400g",
@@ -1369,7 +1747,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 20,
   },
   {
     name: "Top-Op Ponni Boiled Rice 2Kg",
@@ -1382,7 +1760,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 3,
   },
   {
     name: "Heera Glutinous Rice 2Kg",
@@ -1394,7 +1772,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 17,
   },
   {
     name: "Heera Brown Basmati Rice 2Kg",
@@ -1407,7 +1785,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 23,
   },
   {
     name: "Heera Rose Matta Rice 2kg",
@@ -1420,7 +1798,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 19,
   },
   {
     name: "Deccan Sona Masoori Rice 5kg",
@@ -1433,9 +1811,8 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 27,
   },
-
   {
     name: "Uthra Navsari Pawa Medium /Rice Flakes 700g",
     image: "/images/0011842_uthra-navsari-pawa-medium-rice-flakes-700g.jpeg",
@@ -1446,7 +1823,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 7,
   },
   {
     name: "Deccan kairali Palakkad Matta Rice 10kg",
@@ -1459,7 +1836,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 19,
   },
   {
     name: "Deccan Ponni Boiled Rice 9.08kg",
@@ -1472,7 +1849,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 17,
   },
   {
     name: "Heera Idli Rice 10kg",
@@ -1485,10 +1862,10 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 23,
   },
   {
-    name: "Rasoi Magic Veg kadhai (No Onion No Garlic) Spice Mix 50g",
+    name: "Rasoi Magic Veg kadhai Spice Mix 50g",
     image:
       "/images/0002880_rasoi-magic-veg-kadhai-no-onion-no-garlic-spice-mix-50g.jpeg",
     description:
@@ -1499,7 +1876,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 0,
   },
   {
     name: "Greenfield Herbs Parsley 40g",
@@ -1512,7 +1889,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 24,
   },
   {
     name: "Schwartz Oregano 120g",
@@ -1524,7 +1901,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 17,
   },
   {
     name: "Greenfields Majoram 35g",
@@ -1537,7 +1914,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 1,
   },
   {
     name: "Rasoi Magic (NONG) Spice for Paneer Butter Masala",
@@ -1551,7 +1928,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 26,
   },
   {
     name: "Greenfields Curry Leaves 12g",
@@ -1564,10 +1941,10 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 26,
   },
   {
-    name: "Rasoi Magic Paneer Tikka Masala (No Onion No Garlic) 50g",
+    name: "Rasoi Magic Paneer Tikka Masala 50g",
     image:
       "/images/0003006_rasoi-magic-paneer-tikka-masala-no-onion-no-garlic-50g.png",
     description:
@@ -1578,7 +1955,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 23,
   },
   {
     name: "Rasoi Magic Pav Bhaji (No Onion, No Garlic) 50g",
@@ -1591,7 +1968,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 6,
   },
   {
     name: "Rasoi Magic Butter Chicken Spice Mix 50g",
@@ -1604,7 +1981,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 25,
   },
   {
     name: "Rasoi Magic Bhuna Gosht Spice Mix 50g",
@@ -1617,7 +1994,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 23,
   },
   {
     name: "Rasoi Magic Kadhai Chicken 50g",
@@ -1630,7 +2007,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 14,
   },
   {
     name: "Rasoi Magic Paneer Deewani Handi Spice Mix 50g",
@@ -1643,7 +2020,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 27,
   },
   {
     name: "Rasoi Magic Shahi Paneer Spice Mix 50g",
@@ -1656,7 +2033,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 16,
   },
   {
     name: "Rasoi Magic Spice Mix Veg Biryani Spice Mix 50g",
@@ -1683,7 +2060,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 22,
   },
   {
     name: "Greenfields Fenugreek Seeds 100g",
@@ -1696,7 +2073,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 0,
   },
   {
     name: "Sorath Masala Asafoetida Whole 20g",
@@ -1709,7 +2086,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 27,
   },
   {
     name: "Aachi Pepper Chicken Masala 200g",
@@ -1722,7 +2099,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 24,
   },
   {
     name: "Greenfields Kaffier Leaves 15g",
@@ -1735,7 +2112,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 20,
   },
   {
     name: "MTR Puliyogare Powder for Tamarind Rice 200g",
@@ -1748,7 +2125,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 9,
   },
   {
     name: "Fudco Kashmiri Chili (Mild) 75g",
@@ -1760,7 +2137,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 3,
   },
   {
     name: "Fudco Methi Bhardo 100g",
@@ -1772,7 +2149,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 23,
   },
   {
     name: "Aryan Desi Sarson Ka Saag 800g",
@@ -1785,7 +2162,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 25,
   },
   {
     name: "Gits Ready Meal Veg. Pulao Mix Masala 265g",
@@ -1798,7 +2175,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 28,
   },
   {
     name: "Gits Ready Meal Chana Masala 300g",
@@ -1811,7 +2188,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 18,
   },
   {
     name: "Crispy Just Baked Whole Wheat 15 Roti",
@@ -1824,7 +2201,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 17,
   },
   {
     name: "Gits Ready Meal Pau Bhaji Mix Masala 300g",
@@ -1837,7 +2214,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 26,
   },
   {
     name: "Gits Ready Meal Veg Biryani 265gm",
@@ -1850,7 +2227,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 24,
   },
   {
     name: "Natco Kashmiri Dum Aloo 450g",
@@ -1863,7 +2240,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 29,
   },
   {
     name: "Heera Dal Makhani 450g",
@@ -1876,7 +2253,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 25,
   },
   {
     name: "Heera Baigan Bhartha Tin 450g",
@@ -1889,7 +2266,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 20,
   },
   {
     name: "Heera Chatpate Chole 450g",
@@ -1902,7 +2279,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 12,
   },
   {
     name: "Haldirams Minute Khana Veg Pulao 200g",
@@ -1915,7 +2292,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 7,
   },
   {
     name: "Haldiram's Palak Paneer (Frozen) 283g",
@@ -1928,7 +2305,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 26,
   },
   {
     name: "Haldiram's Mutter Kachori 8pcs (Frozen) 420g",
@@ -1941,7 +2318,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 0,
   },
   {
     name: "Haldiram's Minute Khana Choley Chawal(Frozen) 280g",
@@ -1955,7 +2332,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 9,
   },
   {
     name: "Ashoka Ready Meal Achari Aloo 280g",
@@ -1968,7 +2345,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 9,
   },
   {
     name: "Shana Chilli Paratha (5 Pcs) 325g",
@@ -1981,7 +2358,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 18,
   },
   {
     name: "Haldiram's Minute Khana Paneer (Tofu) Makhani 300g",
@@ -1994,7 +2371,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 21,
   },
   {
     name: "Ashoka Tandoori Roti Frozen 300g",
@@ -2006,7 +2383,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 23,
   },
   {
     name: "Haldiram's Rajma Raseela 300g",
@@ -2019,7 +2396,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 16,
   },
   {
     name: "Haldiram's Palak Paneer (Tofu) 300g",
@@ -2032,7 +2409,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 18,
   },
   {
     name: "Ashoka Patra 350g",
@@ -2045,7 +2422,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 6,
   },
   {
     name: "Gits Ready Meal Aloo Matar 300g",
@@ -2058,7 +2435,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 29,
   },
   {
     name: "MTR - Dosa Mix ( Pan Cake Mix) 500g",
@@ -2084,7 +2461,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 5,
   },
   {
     name: "Jaimin Jeera Coin Khichiya 150g",
@@ -2097,7 +2474,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 25,
   },
   {
     name: "Cofresh Jeera Para 300g",
@@ -2110,7 +2487,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 17,
   },
   {
     name: "Cofresh Sweet Sakar Para 300g",
@@ -2123,7 +2500,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 0,
   },
   {
     name: "Jagdish Kenya Mix (Mild) 200g",
@@ -2136,7 +2513,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 4,
   },
   {
     name: "ShivNext Khatta-Meetha Mix 150g",
@@ -2148,7 +2525,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 5,
   },
   {
     name: "Uphaar Roasted Chickpeas Salted 1kg",
@@ -2161,7 +2538,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 4,
   },
   {
     name: "Jaimin Soan Papdi Elachi 250g",
@@ -2173,7 +2550,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 15,
   },
   {
     name: "Haldiram's Gulab Jamun 500g",
@@ -2186,7 +2563,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 21,
   },
   {
     name: "Balaji Pop Rings Masala 65g",
@@ -2199,7 +2576,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 23,
   },
   {
     name: "ShivNext Masala Boondi 150g",
@@ -2211,7 +2588,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 27,
   },
   {
     name: "Uthra Cashew Fiery Chilly 200g",
@@ -2224,7 +2601,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 5,
   },
   {
     name: "Jaimin Special Rusk 200g",
@@ -2237,7 +2614,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 27,
   },
   {
     name: "Lay's Crispz Herb & Onion 52g",
@@ -2250,7 +2627,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 4,
   },
   {
     name: "Balaji Wafers Masala Masti 45g",
@@ -2263,7 +2640,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 24,
   },
   {
     name: "Dairy Valley Khoya Barfi 300g",
@@ -2276,7 +2653,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 2,
   },
   {
     name: "Royal Chai Premium Instant 220g",
@@ -2290,7 +2667,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 25,
   },
   {
     name: "Mukti Instant Tea Pre-Mix Chai Ginger 220g",
@@ -2303,7 +2680,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 4,
   },
   {
     name: "Royal Chai - Premium Instant Tea - Ginger 180g",
@@ -2316,7 +2693,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 29,
   },
   {
     name: "Jus Cool Basil Seed Drink Passion Fruit Flavour",
@@ -2330,7 +2707,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 2,
   },
   {
     name: "Palanquin Spearmint Herbal Tea Bag 80g",
@@ -2343,7 +2720,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 6,
   },
   {
     name: "Jus Cool Basil Seed Drink Lychee Flavour 290ml",
@@ -2356,7 +2733,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 7,
   },
   {
     name: "Chai Xpress Healthy Rooibos Tea 40bags",
@@ -2370,7 +2747,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 15,
   },
   {
     name: "Lovely Sweets Petha 1kg",
@@ -2383,7 +2760,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 9,
   },
   {
     name: "Ferrero Rocher Chocolate T8 Pack",
@@ -2395,7 +2772,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 21,
   },
   {
     name: "TYJ Spring Roll Pastry 40 Sheets",
@@ -2408,7 +2785,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 1,
   },
   {
     name: "Purvi Cassava Chips Unsalted 200g",
@@ -2421,7 +2798,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 24,
   },
   {
     name: "Real Bites Indori Mix 400g",
@@ -2434,7 +2811,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 8,
   },
   {
     name: "Royal Chai Premium Instant Tea 180g",
@@ -2447,7 +2824,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 22,
   },
   {
     name: "Royal Chai Instant Tea Saffron Chai (Unsweet) 180g",
@@ -2460,7 +2837,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 20,
   },
   {
     name: "Royal Chai Masala Chai Sweetened 400g",
@@ -2473,7 +2850,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 1,
   },
   {
     name: "Jus Cool Basil Seed Drink Pineapple Flavour 290ml",
@@ -2486,7 +2863,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 16,
   },
   {
     name: "Jus Cool Basil Seed Drink Orange Flavour 290ml",
@@ -2498,7 +2875,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 24,
   },
   {
     name: "Niru Faluda 290ml",
@@ -2511,7 +2888,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 8,
   },
   {
     name: "Aachi Chukku Kappi 200g",
@@ -2524,7 +2901,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 0,
   },
   {
     name: "Girnar Ginger Tea 37.5g",
@@ -2537,7 +2914,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 18,
   },
   {
     name: "Girnar Kashmiri Kahwa Green Tea Mix 37.5g",
@@ -2550,7 +2927,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 1,
   },
   {
     name: "Girnar Kesari Masala Teabags 50g",
@@ -2563,7 +2940,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 14,
   },
   {
     name: "Royal Chai Cardamom Chai Sweetened 400g",
@@ -2576,7 +2953,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 27,
   },
   {
     name: "Brooke Bond Red Label Tea225g",
@@ -2601,7 +2978,7 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 24,
   },
   {
     name: "Frooti Mango Drink 200ml",
@@ -2614,10 +2991,17 @@ const products = [
     countInStock: 10,
     rating: 0,
     numReviews: 0,
-    discount: 10,
+    discount: 28,
   },
 ];
 
 
-
+/*for (var i in products) {
+  products[i].discount = Math.floor(Math.random() * 30);
+  
+}
+const p = products
+for (var i in p) {
+  console.log(p[i],',')
+}*/
 export default products;
